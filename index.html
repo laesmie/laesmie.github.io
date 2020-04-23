@@ -36,17 +36,17 @@
                 </main>
                 <footer>
                     <p>
-                        <span id="year">©2020</span>
+                        &copy;<span id="year"></span>
                          | Kyla Azlin | United States | 
                         <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
                     </p>
-                    <p id="lastUpdated">
-                        Last Updated: 
-                    </p>
-                    <script>
-                        var d = new Date();
-                        document.getElementById("lastUpdated").innerHTML = d;
-                    </script>
+                    <p id="lastUpdated"></p>
                 </footer>
+                <script>
+                    var d = new Date();
+                    var string = document.lastModified;
+                    document.getElementById("lastUpdated").textContent = `Last Updated: ${string}`
+                    document.getElementById("year").textContent = d.getFullYear();
+                </script>
             </body>
     </html>
