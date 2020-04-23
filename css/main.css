@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+h1 {
+    padding: 30px;
+}
+
 body {
     font-size: 16px;
     line-height: 32px;
@@ -17,7 +21,7 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: #008b8b;
+    background-color: #00be9f;
     color: #ffffff;
     border-radius: 10px;
 }
