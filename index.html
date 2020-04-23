@@ -1,10 +1,54 @@
-<!DOCTYPE html>
-    <html>
+<!DOCTYPE HTML>
+    <html lang="en-us">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <head>
-            <title>Test Page</title>
-            <body>
-                <h1>Test Page</h1>
-                <p>Hello</p>
-            </body>
+            <title>Kyla Azlin - WDD230</title>
+            <meta name="description" content="Assignment portal for Kyla Azlin in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+            <link rel="stylesheet" href="css/normaliz.css">
+            <link rel="stylesheet" href="css/main.css">
         </head>
+            <body>
+                <header>
+                    <img src="images/kyla.jpg" alt="Picture of Kyla">
+                    <h1>Kyla Azlin</h1>
+                </header>
+                <main>
+                    <h2>WDD 230 - Assignment Portal</h2>
+                    <hr>
+                    <ul>
+                        <li>
+                            "Lesson 2: "
+                            <a href="index.html">Assignment</a>
+                        </li>
+                        <li>
+                            "Lesson 3: "
+                            <a href="index.html">Assignment</a>
+                        </li>
+                        <li>
+                            "Lesson 4: "
+                            <a href="index.html">Link</a>
+                            " | "
+                            <a href="index.html">Link</a>
+                        </li>
+                    </ul>
+                </main>
+                <footer>
+                    <p>
+                        "               
+                                        ©"
+                        <span id="year">2020</span>
+                        " | Kyla Azlin | United States | "
+                        <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+                    </p>
+                    <p id="lastUpdated"> Last Updated: 04/23/2020 11:14:45</p>
+                </footer>
+                <script>
+                    var string = document.lastModified;
+                    document.getElementById("modified").textContent = 'Last Updated: ${string}';
+                    var date = new Date();
+                    document.getElementById("year").textContent = date.getFullYear();
+                </script>
+            </body>
     </html>
