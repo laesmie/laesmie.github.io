@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Comin+Neue&display=swap/")
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Comic Neue", Regular;
+}
+h2 {
+    text-align: center;
+    background color: #008B8B;
+}
