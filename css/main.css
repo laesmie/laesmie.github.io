@@ -33,7 +33,6 @@ header, footer, footer a {
 
 header img {
     width: 100px;
-    float: right;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0.3px 0.3px 4px #ff1493;
