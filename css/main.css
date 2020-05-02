@@ -14,7 +14,7 @@ body {
     line-height: 32px;
 }
 
-ul {
+a:link {
     text-decoration: none;
 }
 
