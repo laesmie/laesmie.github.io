@@ -1,8 +1,5 @@
 <!DOCTYPE HTML>
     <html lang="en-us">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <head>
             <title>Kyla Azlin - WDD230</title>
             <meta name="description"
@@ -10,12 +7,17 @@
             <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="css/normalize.css">
             <link rel="stylesheet" href="css/main.css">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         </head>
-            <body>
+
+        <body>
+            <div id="container">
                 <header>
                     <img src="images/kylaportrait.jpg" alt="Picture of Kyla">
                     <h1>Kyla Azlin</h1>
                 </header>
+
                 <main>
                     <h2>WDD 230 - Assignment Portal</h2>
                     <hr>
@@ -25,19 +27,16 @@
                         <li>Lesson 4: <a href="index.html">Link</a> | <a href="index.html">Link</a></li>
                     </ul>
                 </main>
+
                 <footer>
                     <p>
-                        &copy;<span id="year"></span>
-                         | Kyla Azlin | United States | 
+                        &copy; <span id="year"></span></span>
+                        | Kyla Azlin | United States | 
                         <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
                     </p>
                     <p id="lastUpdated"></p>
                 </footer>
-                <script>
-                    var d = new Date();
-                    var string = document.lastModified;
-                    document.getElementById("lastUpdated").textContent = `Last Updated: ${string}`
-                    document.getElementById("year").textContent = d.getFullYear();
-                </script>
-            </body>
+                <script src="javascript-functions.js"></script>
+            </div>
+        </body>
     </html>
