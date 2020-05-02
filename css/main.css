@@ -1,6 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Gayathri', sans-serif;
 }
 
 h1 {
@@ -11,7 +12,6 @@ h1 {
 body {
     font-size: 16px;
     line-height: 32px;
-    font-family: 'Gayathri', sans-serif;
 }
 
 header, main, footer {
