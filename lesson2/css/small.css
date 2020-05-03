@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+:root {
+    --primary-color: #001433;
+    --secondary-color: #FDB515;
+    --primary-font: "Roboto Slab";
+    --secondary-font: "Roboto";
+    --paragraph-font: Roboto, Helvetica, sans-serif;
+}
+
+header,
+nav,
+main,
+footer {
+    margin: 0 auto;
+    padding: 0.75rem;
+    max-width: 1140px;
+}
+
+header,
+footer {
+    text-align: center;
+    color: var(--primary-color);
+    border-style: solid;
+    border-color: var(--primary-color);
+}
+
+h1,
+h2 {
+    font-family: var(--primary-font);
+}
+
+h3 {
+    font-family: var(--secondary-font);
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: var(--secondary-font);
+    font-size: 16px;
+}
+
+img {
+    max-width: 200px;
+    max-height: auto;
+    padding: 10px;
+}
+
+section {
+    padding: 10px;
+    background-color: gray;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    align-content: center;
+    margin: 10px;
+    border-style: solid;
+    border-color: lightsteelblue;
+}
+
+footer a:link {
+    color: var(--primary-color)
+}
+
+footer a:visited {
+    color: var(--primary-color)
+}
+
+footer {
+    font-family: var(--primary-font);
+}
