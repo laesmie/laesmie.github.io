@@ -1,38 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
-
-:root {
-    --primary-color: #001433;
-    --secondary-color: #FDB515;
-    --primary-font: "Roboto Slab";
-    --secondary-font: "Roboto";
-    --paragraph-font: Roboto, Helvetica, sans-serif;
-}
-
-header,
-nav,
-main,
-footer {
+header, nav, main, footer {
     margin: 0 auto;
-    padding: 0.75rem;
+    padding: 2%;
     max-width: 1140px;
 }
 
-header,
-footer {
+header, footer {
     text-align: center;
-    color: var(--primary-color);
+    color: #333;
     border-style: solid;
-    border-color: var(--primary-color);
+    border-color: #333;
 }
 
-h1,
-h2 {
-    font-family: var(--primary-font);
+h1, h2 {
+    font-family: 'Quicksand', sans-serif;
 }
 
 h3 {
-    font-family: var(--secondary-font);
+    font-family: 'Quicksand', sans-serif;
 }
 
 a:link {
@@ -40,13 +24,13 @@ a:link {
 }
 
 a:visited {
-    color: white;
+    color: #333;
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr;
-    font-family: var(--secondary-font);
+    font-family: 'Gayathri', sans-serif;
     font-size: 16px;
 }
 
@@ -58,25 +42,24 @@ img {
 
 section {
     padding: 10px;
-    background-color: gray;
+    background-color: #00be9f;
     text-align: center;
-    background-color: var(--primary-color);
     color: white;
     border-radius: 10px;
     align-content: center;
     margin: 10px;
     border-style: solid;
-    border-color: lightsteelblue;
+    border-color: #333;
 }
 
 footer a:link {
-    color: var(--primary-color)
+    color: white;
 }
 
 footer a:visited {
-    color: var(--primary-color)
+    color: #333;
 }
 
 footer {
-    font-family: var(--primary-font);
+    font-family: 'Gayathri', sans-serif;
 }
