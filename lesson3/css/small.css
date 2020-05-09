@@ -27,7 +27,7 @@ header h2 {margin: 0; font-weight: normal; font-size: 1rem;}
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #B8B8D1;
+    background-color: #1C2541;
 }
 nav ul {
     list-style-type: none;
@@ -37,20 +37,20 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: #FFFFFB;
+    color: #6FFFE9;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
     text-align: center;
 }
 
-
 nav ul li a:hover {
-    background-color: #5B5F97;
+    background-color: #3A506B;
     color: #333;
 }
+
 nav ul li.active a {
-    background-color: #FF6B6C;
+    background-color: #5BC0BE;
     color: #FFFFFB;
 }
 /*----------- MAIN --------------*/
@@ -82,7 +82,7 @@ article {
 
 .color2 {
     color: #FFFFFB;
-    background-color: #B8B8D1;
+    background-color: #1C2541;
 }
 
 .color3 {
@@ -92,7 +92,7 @@ article {
 
 .color4 {
     color: #333;
-    background-color: #5B5F97;
+    background-color: #3A506B;
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
