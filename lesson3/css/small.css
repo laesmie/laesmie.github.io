@@ -15,7 +15,7 @@ body {
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #17BEBB;
+    background-color: #6FFFE9;
 }
 header img {
     float:left;
@@ -37,7 +37,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: #6FFFE9;
+    color: #FFFFFB;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
@@ -46,7 +46,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #3A506B;
-    color: #333;
+    color: #FFFFFB;
 }
 
 nav ul li.active a {
@@ -62,7 +62,7 @@ main {
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #17BEBB;
+    background-color: #6FFFE9;
     padding: .5rem 2%;
     text-align: center;
 }
@@ -74,7 +74,7 @@ article {
     border-radius: 10px;
 }
 
-/* .color1 h4 {color: black;} */
+. color1 h4 {color: black;}
 .color1 {
     color: black;
     background-color: #17BEBB;
