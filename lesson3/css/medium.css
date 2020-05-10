@@ -1,26 +1,16 @@
 /* 35em is also 560px (if basefont is 16px) */
 @media only screen and (min-width: 35rem) {
 
-    header, nav, main, footer {
-        max-width: 35rem;
-        margin:auto;
-    }
 
     /*----------- BODY --------------*/
     
     
     
     /*----------- HEADER --------------*/
+        header img {width: auto;}
+        header h1 {font-size: 2rem; margin-top: 25px;}
+        header h2 {font-size: 1.5rem;}
     
-        header img {
-            width: auto;
-        }
-        header h1 {
-            font-size: 2rem;
-        }
-        header h2 {
-            font-size: 1.5rem;
-        }
     
     /*----------- NAVIGATION --------------*/
         nav ul {margin-left: 2%;}
@@ -30,7 +20,12 @@
     
     
     /*----------- MAIN --------------*/
-    
+    main img.screen { 
+        width: 950px;
+    }
+    main img.none { 
+        width: 250px;
+    }
     
     
     /*----------- FOOTER --------------*/
