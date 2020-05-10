@@ -15,7 +15,8 @@ body {
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #6FFFE9;
+    color: black;
+    background-color: white;
 }
 header img {
     float:left;
@@ -27,7 +28,8 @@ header h2 {margin: 0; font-weight: normal; font-size: 1rem;}
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #1C2541;
+    color: white;
+    background-color: #36CCFF;
 }
 nav ul {
     list-style-type: none;
@@ -37,7 +39,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: #FFFFFB;
+    color: #FFFFFF;
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
@@ -45,13 +47,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #3A506B;
-    color: #FFFFFB;
+    background-color: rgb(0, 180, 240);
+    color: #333;
 }
 
 nav ul li.active a {
-    background-color: #5BC0BE;
-    color: #FFFFFB;
+    color: #ffffff;
+    background-color: #000000;
 }
 /*----------- MAIN --------------*/
 main {
@@ -62,37 +64,11 @@ main {
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #6FFFE9;
+    background-color: #36CCFF;
     padding: .5rem 2%;
     text-align: center;
 }
 
-article {
-    display: block;
-    margin: 15px;
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-. color1 h4 {color: black;}
-.color1 {
-    color: black;
-    background-color: #17BEBB;
-}
-
-.color2 {
-    color: #FFFFFB;
-    background-color: #1C2541;
-}
-
-.color3 {
-    color: #FFFFFB;
-    background-color: #FF6B6C;
-}
-
-.color4 {
-    color: #333;
-    background-color: #3A506B;
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

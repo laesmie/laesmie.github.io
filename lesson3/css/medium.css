@@ -1,6 +1,10 @@
 /* 35em is also 560px (if basefont is 16px) */
 @media only screen and (min-width: 35rem) {
 
+    header, nav, main, footer {
+        max-width: 35rem;
+        margin:auto;
+    }
 
     /*----------- BODY --------------*/
     
