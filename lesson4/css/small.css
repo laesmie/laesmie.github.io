@@ -4,96 +4,16 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/*----------- BODY --------------*/
-body {
-    background-color: #F1FAEE;
-    font-size: 16px;
-    font-family: Montserrat, sans-serif;
-    padding: 0;
-	margin: 0;
-}
-
-/*----------- HEADER --------------*/
-div#headerWrapper {background-color:whitesmoke;}
 header {
-	padding: 5px 0;
-	display: flex;
-	align-items:center;
-	justify-content:center;
+    padding: .5rem 2%;
+    background-color: #3a728f;
+    
 }
+header img {float: left; margin-right: 10px; width: 50px;}
+header h1 {margin: 0; font-size: 1.3rem; font-family: 'Rock Salt', cursive;}
+header h2 {margin: 0; font-weight: normal; font-size: 1rem;} 
 
-header img {
-	width: 80px;
-	height: auto;
-}
 
-.title {
-    color: #E63946;
-    font-family: Monda;
-    font-weight: 700;
-}
-
-.soon {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1898cb+18,1d3557+100 */
-background: #1898cb; /* Old browsers */
-background: -moz-linear-gradient(45deg,  #1898cb 18%, #1d3557 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(45deg,  #1898cb 18%,#1d3557 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(45deg,  #1898cb 18%,#1d3557 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1898cb', endColorstr='#1d3557',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 4rem 0;
-    margin: 1rem 0;
-
-}
-
-.headings {
-	display: flex;
-	flex-direction: column;
-}
-
-.headings h1 {
-	font-size: 1.6rem;
-	margin: 0 0 0 17px;
-}
-
-.m {
-	font-style: italic;
-	letter-spacing: 1pt;
-	color: #E63946;
-	margin-left: 20px;
-	font-size: .9rem;
-}
-
-header h1 {
-    margin: auto;
-    font-size: 1.2rem;
-    color: #1D3557;
-    font-family: Monda;
-}
-header h2 {
-
-    margin: auto; 
-    font-weight: normal;
-    font-size: 1rem;
-    color:#457B9D;
-    font-family: Monda;
-}
-
-h3, h4 {
-    color: #457B9D;
-    font-family: Monda;
-    font-size: 1.5rem;
-}
-
-.title {
-    color: #E63946;
-    font-family: Monda;
-    font-weight: 700;
-}
-
-/*----------- NAVIGATION --------------*/
 nav button {
     margin: .2rem 2%;
     background-color: transparent;
@@ -102,62 +22,62 @@ nav button {
     color: #fff;
 }
 
-div#NavWrapper {background-color: #1D3557;}
-
 nav {
-    font-family: Verdana, sans-serif;
+    background-color: #666;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+
 }
 
 nav ul li a {
     display: block;
     padding: .8rem 2%;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255,255,255,0.8);
     border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-nav ul li.active a {background-color: rgba(0, 0, 0, 0.2);color:#fff;}
 
-nav ul li a:hover {background-color: rgba(0, 0, 0, 0.4);}
 
-nav ul.hide {display: none;}
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
 
-/*----------- MAIN --------------*/
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);;
+}
+nav ul.hide {
+    display: none;
+}
+
 main {
-    padding: 0 2%;
-    min-height: 10rem;
+    padding: .5rem 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-main h1 {
-    color: #457B9D;
+main section {
+    padding: .5rem 2%;
+    border: 1px solid rgba(0,0,0,0.5);
+    margin: 10px 0;
+    background-color: #e3e3e3;
 }
-
-
-/*----------- FOOTER --------------*/
-div#FooterWrapper {background-color: #1D3557;}
 footer {
+    
+    justify-content: center;
+    display: flex;
+    background-color: #3a728f;
     padding: .5rem 2%;
     text-align: center;
-    color: #F1FAEE;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
-  footer a:link {
-    color:#F1FAEE;
-  }
-  footer a:visited {
-    color: #F1FAEE;
-  }
-  /* mouse over link */
-  footer a:hover {
-    font-weight: bold;
-    color: #457B9D;
-  }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -165,9 +85,3 @@ footer {
     display: table;
     clear: both;
   }
-
-
-
-
-
-

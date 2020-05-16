@@ -1,48 +1,49 @@
 /* 35em is also 560px when basefont is 16px */
-@media only screen and (min-width: 40.5rem) {
-
-    
+@media screen and (min-width: 35em) {
+  
     header img {
-        width: 100%;
-        max-width: 150px;
+        width: 70px;
     }
-        
-    .headings h1 {
-        font-size: 2.6rem;
+    header h1 {
+        font-size: 1.7rem;
     }
-        
-    .m {
-        letter-spacing: 1.5pt;
-        font-size: larger;
-        margin-left: 17px;
+    header h2 {
+        font-size: 1.4rem;
     }
-        
-
-    div#NavWrapper {
-background: #1d3557; /* Old browsers */
-background: -moz-linear-gradient(45deg,  #1d3557 0%, #1898cb 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(45deg,  #1d3557 0%,#1898cb 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(45deg,  #1d3557 0%,#1898cb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d3557', endColorstr='#1898cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
+    nav {
+        display: flex;
     }
-
-    nav button {display: none;}
-
-    nav ul.hide {display: block;}
-
-    nav ul {margin-left: 2%;}
-
+    nav button {
+        display: none;
+    }
+    nav ul.hide {
+        display: flex;
+    }
+    
     nav ul li {
-        float: left;
+       display: block;
+       flex: 1 1 auto;
     }
-
     nav ul li a {
         border: none;
-        border-right: 1px solid rgba(0, 0, 0, 0.3);
-        padding: .8rem 1rem;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .6rem 1rem;
+        font-size: .78rem;
     }
 
-    
+    section.forecast { 
+        display: inline;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th {
+        background-color: #d3d3d3;
+    }
+    .forecastTable {
+        width: 700px;
+        padding: .5rem 2%;
+    }
 
-} /*end medium */
+}
