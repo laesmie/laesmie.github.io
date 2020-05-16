@@ -1,7 +1,7 @@
 function toggleMenu() {
- 
     document.getElementById("navigation").classList.toggle("hide");
 }
+
     const days = [
         "Sunday",
         "Monday",
@@ -11,6 +11,7 @@ function toggleMenu() {
         "Friday",
         "Saturday"
     ];
+
     const months = [
         "January",
         "February",
