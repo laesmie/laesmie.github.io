@@ -1,9 +1,7 @@
-// nav hamburger 
 function toggleMenu() {
  
-    document.getElementById("primaryNav").classList.toggle("hide");
+    document.getElementById("navigation").classList.toggle("hide");
 }
-// get date for footer
     const days = [
         "Sunday",
         "Monday",
@@ -32,4 +30,4 @@ function toggleMenu() {
     const monthName = months[d.getMonth()];
     const year = d.getFullYear();
     const fulldate = dayName + ", " + d.getDate() + " " + monthName + " " + year;
-    document.getElementById("footerDate").textContent = fulldate;
+    document.getElementById("currentDate").textContent = fulldate;
