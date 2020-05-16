@@ -26,6 +26,7 @@ function toggleMenu() {
         "November",
         "December"
     ];
+    
     const d = new Date();
     const dayName = days[d.getDay()];
     const monthName = months[d.getMonth()];
