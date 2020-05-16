@@ -20,11 +20,15 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.5rem;
-    color: #fff;
+    color: black;
 }
 
 nav {
-    background-color: #5BC0BE;
+    background: #3a506b;
+    background: -moz-linear-gradient(top,  #3a506b 0%, #5bc0be 100%);
+    background: -webkit-linear-gradient(top,  #3a506b 0%,#5bc0be 100%);
+    background: linear-gradient(to bottom,  #3a506b 0%,#5bc0be 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a506b', endColorstr='#5bc0be',GradientType=0 );
     font-family: 'Gayathri';
 }
 
@@ -36,7 +40,7 @@ nav ul {
 
 nav ul li a {
     display: block;
-    color: #eee;
+    color: white;
     padding: .5rem 2%;
     text-decoration: none;
     font-size: .9rem;
@@ -45,12 +49,12 @@ nav ul li a {
 
 nav ul li.active a {
     background-color: #6FFFE9;
-    color: #ffffff;
+    color: #848484;
 }
 
 nav ul li a:hover {
     background-color: #3A506B;
-    color: #eee;
+    color: white;
 }
 
 nav ul.hide {
@@ -89,10 +93,14 @@ main section {
 footer {
     justify-content: center;
     display: flex;
-    background-color: #5BC0BE;
     padding: .5rem 2%;
     text-align: center;
     color: #ffffff;
+    background: #5bc0be;
+    background: -moz-linear-gradient(top,  #5bc0be 0%, #3a506b 100%);
+    background: -webkit-linear-gradient(top,  #5bc0be 0%,#3a506b 100%);
+    background: linear-gradient(to bottom,  #5bc0be 0%,#3a506b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5bc0be', endColorstr='#3a506b',GradientType=0 );
     font-family: 'Gayathri';
 }
 
