@@ -168,8 +168,8 @@ main section {
     background: #5bc0be
 }
 
-.contact h2, h3, h4 {
-    text-align: center;
+.contact h3 {
+    text-align: left;
     background: #5bc0be;
     padding: 10px;
     display: flex;
@@ -180,7 +180,7 @@ main section {
     padding-top: 2px;
     display: flex;
     flex-direction: row;
-    text-align: center;
+    text-align: right;
 }
 
 
