@@ -71,8 +71,8 @@ nav ul li a {
 
 nav ul li.active a {
     background-color: #6FFFE9;
-    color: #848484;
-    font-weight: bold;
+    color: black;
+    font-size: 1.2rem;
 }
 
 nav ul li a:hover {
