@@ -23,23 +23,25 @@ nav {
     display: flex;
 }
 
-nav ul {
-    margin-left: 2%;
+nav button {
+    display: none;
 }
 
 nav ul.hide {
-    display: block;
+    display: flex;
   }
 
-nav li {
-    display: block; /* change state in small view */
+nav ul li {
+    display: block;
     flex: 1 1 auto;
 }
 
-nav a {
-    text-align: center;
+nav ul li a {
     border: none;
-    border-right: 1px solid rgba(250,250,250,0.2);
+    border-right: 1px solid black;
+    padding: .6rem 1rem;
+    font-size: .78rem;
+    text-align: center;
 }
 
 .hero {
