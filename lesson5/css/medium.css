@@ -19,6 +19,14 @@ header img {
     letter-spacing: .08rem;
 }
 
+nav ul {
+    margin-left: 2%;
+}
+
+nav ul.hide {
+    display: block;
+  }
+
 .navigation {
     display: flex;
 }
