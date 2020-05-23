@@ -161,29 +161,23 @@ main section {
 
 /* ------------contact formatting -----------*/
 .contact {
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: 1fr 1fr;
-    text-align: center;
     background: #5bc0be
 }
 
 .contact h3 {
-    text-align: left;
     background: #5bc0be;
-    padding: 10px;
+    padding: 5px;
     display: flex;
 }
 
 .contact p {
-    margin: 20px;
+    margin: 5px;
     padding-top: 2px;
-    display: flex;
     flex-direction: row;
-    text-align: right;
 }
-
-
 
 .info {
     display: flex;
@@ -199,12 +193,10 @@ main section {
 
 .address p, .how p {
     margin: 15px auto
-
 }
 
 .map img {
-    width: 100%;
-    margin: 25px auto;
+    display: none;
 }
 
 
