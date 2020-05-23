@@ -103,9 +103,9 @@ nav ul li a {
     width: 100%;
 }
 
-.contactInfo {
+/*.contactInfo {
     display: flex;
-}
+}*/
 
 .map {
     flex: 1;

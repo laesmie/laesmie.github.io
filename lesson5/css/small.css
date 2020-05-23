@@ -160,16 +160,13 @@ main section {
 
 
 /* ------------contact formatting -----------*/
-.contactInfo h1 {
+.contactInfo {
     text-align: center;
+    margin: 7px;
 }
 
 .info {
     display: flex;
-}
-  
-.info p, h2, h3 {
-    margin: 2px;
 }
 
 .contact, .address {
@@ -181,7 +178,8 @@ main section {
 }
   
 .map img {
-    display: none;
+    max-width: 7rem;
+    margin: 2px;
   }
 
 
