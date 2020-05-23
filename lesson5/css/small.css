@@ -162,7 +162,7 @@ main section {
 /* ------------contact formatting -----------*/
 .contactInfo {
     text-align: center;
-    margin: 10px;
+    margin: 0;
 }
 
 .info {
