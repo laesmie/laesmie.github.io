@@ -110,8 +110,17 @@ nav ul li a {
     align-items: center;
 }
     
-.map-container{
-    display: block;
+.map {
+    flex: 1;
+}
+
+.map img {
+    width: 100%;
+    margin: 0;
+}
+
+.info {
+    flex: 1.5;
 }
 
 } /*end medium */

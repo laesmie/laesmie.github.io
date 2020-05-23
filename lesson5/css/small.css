@@ -184,6 +184,30 @@ main section {
 }
 
 
+
+.info {
+    display: flex;
+}
+  
+.info p, h3 {
+    margin: 0;
+}
+
+.how, .address {
+    flex: 1;
+}
+
+.address p, .how p {
+    margin: 15px auto
+
+}
+
+.map img {
+    width: 100%;
+    margin: 25px auto;
+}
+
+
 /*----------- FOOTER --------------*/
 footer {
     justify-content: center;
