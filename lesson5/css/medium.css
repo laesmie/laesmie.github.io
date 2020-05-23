@@ -40,7 +40,6 @@ header img {
 
 .hero {
     height: 400px;
-    background: radial-gradient(white, #5bc0be, #3a506b);
 }
 
 .hero-img img {
@@ -49,7 +48,7 @@ header img {
 
 .weather {
     display: block;
-    background: radial-gradient(white, #5bc0be, #3a506b);
+    background: #5bc0be
 }
 
 .forecast {
