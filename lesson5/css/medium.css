@@ -103,19 +103,17 @@ nav ul li a {
     width: 100%;
 }
 
-.contact {
+.contactInfo {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
-    
+
 .map {
     flex: 1;
 }
 
 .map img {
     width: 100%;
-    margin: 5px;
+    margin: 25px auto;
 }
 
 .info {

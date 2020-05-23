@@ -160,25 +160,6 @@ main section {
 
 
 /* ------------contact formatting -----------*/
-.contact {
-    padding: 5px;
-    display: flex;
-    flex-direction: 1fr 1fr;
-    background: #5bc0be
-}
-
-.contact h3 {
-    background: #5bc0be;
-    padding: 5px;
-    display: flex;
-}
-
-.contact p {
-    margin: 5px;
-    padding-top: 2px;
-    flex-direction: row;
-}
-
 .info {
     display: flex;
 }
@@ -187,17 +168,17 @@ main section {
     margin: 0;
 }
 
-.how, .address {
+.contact, .address {
     flex: 1;
 }
-
-.address p, .how p {
+  
+.address p, .contact p {
     margin: 15px auto
 }
-
+  
 .map img {
     display: none;
-}
+  }
 
 
 /*----------- FOOTER --------------*/
