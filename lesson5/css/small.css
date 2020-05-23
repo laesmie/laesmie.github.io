@@ -170,7 +170,7 @@ main section {
 }
 
 .contact, .address {
-    display: flex;
+    flex: 1;
 }
   
 .address p, .contact p {

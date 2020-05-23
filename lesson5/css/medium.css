@@ -104,7 +104,7 @@ nav ul li a {
 }
 
 .map {
-    display: flex;
+    flex: 1.5;
 }
 
 .map img {
