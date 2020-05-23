@@ -103,21 +103,13 @@ nav ul li a {
     width: 100%;
 }
 
-/*.contactInfo {
-    display: flex;
-}*/
-
 .map {
-    flex: 1;
+    display: flex;
 }
 
 .map img {
     width: 100%;
     margin: 2px;
-}
-
-.info {
-    flex: 1.5;
 }
 
 } /*end medium */

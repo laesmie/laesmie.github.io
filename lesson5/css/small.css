@@ -162,7 +162,7 @@ main section {
 /* ------------contact formatting -----------*/
 .contactInfo {
     text-align: center;
-    margin: 7px;
+    margin: 10px;
 }
 
 .info {
@@ -170,7 +170,7 @@ main section {
 }
 
 .contact, .address {
-    flex: 1;
+    display: flex;
 }
   
 .address p, .contact p {
@@ -178,8 +178,7 @@ main section {
 }
   
 .map img {
-    max-width: 15rem;
-    margin: 2px;
+    display: none;
   }
 
 
