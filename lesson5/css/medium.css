@@ -19,6 +19,10 @@ header img {
     letter-spacing: .08rem;
 }
 
+nav {
+    display: flex;
+}
+
 nav ul {
     margin-left: 2%;
 }
@@ -27,23 +31,15 @@ nav ul.hide {
     display: block;
   }
 
-.navigation {
-    display: flex;
-}
-
-.navigation li {
+nav li {
     display: block; /* change state in small view */
     flex: 1 1 auto;
 }
 
-.navigation a {
+nav a {
     text-align: center;
     border: none;
     border-right: 1px solid rgba(250,250,250,0.2);
-}
-
-.navigation li:first-child {
-    display: none;
 }
 
 .hero {
