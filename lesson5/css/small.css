@@ -140,7 +140,7 @@ main section {
 	bottom: 25px;
 	left: 25px;
 	background: #5bc0be;
-	border-box: 1px solid black;
+	border: 1px solid black;
 	padding: .4rem;
 	box-shadow: 0 0 30px #eee;
     opacity: .9;
