@@ -164,8 +164,8 @@ main section {
     display: flex;
 }
   
-.info p, h3 {
-    margin: 0;
+.info p, h2, h3 {
+    margin: 2px;
 }
 
 .contact, .address {
@@ -173,11 +173,12 @@ main section {
 }
   
 .address p, .contact p {
-    margin: 15px auto
+    margin: 15px auto;
 }
   
 .map img {
-    display: none;
+    width: 100%;
+    margin: 25px auto;
   }
 
 
