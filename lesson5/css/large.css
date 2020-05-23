@@ -3,8 +3,13 @@
 
 
 header, nav, main, footer {
-    max-width: 960px;
+    max-width: 1024px;
     margin: 0 auto;
+}
+
+nav ul li a {
+    padding: .8rem 1.4rem;
+    font-size: .9rem;
 }
  
 } /*end large */
