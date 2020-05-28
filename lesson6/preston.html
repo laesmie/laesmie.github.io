@@ -58,8 +58,10 @@
             <section class="hero">
                 <div class="hero-img">
                     <figure class="myphoto">
-                        <img src="images/golgotha.jpg" alt="franklin" sizes="50vw" srcset="images/wdd230_image_franklin-small.jpg 400w, 
-                        images/wdd230_image_franklin-medium.jpg 800w, images/wdd230_image_franklin-large.jpg 1200w, images/wdd230_image_franklinOriginal.jpg 1201w">
+                        <source media="(max-width: 400px)" srcset="images/small.jpg">
+                        <source media="(max-width: 800px)" srcset="images/medium.jpg">
+                        <source media="(max-width: 1000px)" srcset="images/large.jpg">
+                        <img src="images/original.jpeg" alt="image of Franklin">
                         <figcaption>Franklin</figcaption>
                     </figure>
                     <div class="summary">
