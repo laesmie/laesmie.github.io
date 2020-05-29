@@ -58,10 +58,9 @@
             <section class="hero">
                 <div class="hero-img">
                     <figure class="myphoto">
-                        <img src="images/original.jpg" alt="hero image" sizes="100vw"
-                            srcset= "images/small.jpg 400w,
-                            images/medium.jpg 800w,
-                            images/large.jpg 1200w">
+                        <source srcset="images/medium.jpg" media="(min-width: 800px) and (max-width: 1199px)">
+                            <source srcset="images/large.jpg" media="(min-width: 1200px)">
+                            <img src="images/small.jpg" alt="Provided Image">
                         <figcaption>Franklin</figcaption>
                     </figure>
 
