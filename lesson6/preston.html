@@ -57,10 +57,11 @@
             <h1>Preston</h1>
             <section class="hero">
                 <div class="hero-img">
-                    <figure class="myphoto">
-                        <img src="images/original.jpg" alt="Franklin">
-                        <figcaption>Franklin</figcaption>
-                    </figure>
+                    <picture>
+                        <source srcset="images/medium.jpg" media="(min-width: 800px) and (max-width: 1199px)">
+                        <source srcset="images/large.jpg" media="(min-width: 1200px)">
+                        <img src="images/small.jpg" alt="Provided Image">
+                    </picture>
 
                     <div class="summary">
                         <h2>Today's Weather</h2>
