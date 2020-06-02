@@ -43,14 +43,6 @@ nav ul li a {
     font-size: .78rem;
 }
 
-.hero {
-    height: 400px;
-}
-
-.hero-img img {
-    height:396px;
-}
-
 .weather {
     display: block;
     background: #5bc0be
