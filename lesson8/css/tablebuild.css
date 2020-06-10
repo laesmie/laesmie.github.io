@@ -1,46 +1,52 @@
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+table, tr, td {
+    border: 1px solid rgb(190, 190, 190);
+    border-collapse: collapse;
+}
+
 table {
-    border: 1px solid black;
-    font-family: Ubuntu, sans-serif;
-    margin: 4px;
-    font-size: 25px;
-}
-
-.heading, .footing {
-    background-color: #7fb9c2;
-}
-
-.pssg {
-    background-color: #628ca6;
-    color: white;
-}
-
-.aug, .oct, .bf {
-    background-color: #e7f0ed;
-}
-
-.sep, .nov, .dec {
-    background-color: #e7ffed;
-}
-
-.heading, .pssg, .aug, .sep, .oct, .nov, .bf, .dec {
+    font-size: 1.5rem;
+    box-shadow: 7px 7px 7px #628ca6;
     text-align: center;
-    
-}
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+
+  tr {
+    background-color: #e7ffed;
+  }
+
 
 .heading {
-    text-align: center;
-    font-weight: bold;
-}
-
-.bf {
-    font-style: italic;
-}
-
-.sgm {
+    color: white;
     background-color: #628ca6;
+    font-weight: bold;
+  }
+
+
+  tr:nth-child(odd) {
+    background-color: #e7f0ed;
+    color: #000000
+  }
+
+
+th, tfoot tr td {
+  background-color: #7fb9c2;
+  padding: 10px 10px;
 }
 
-.footing {
-    text-align: center;
-    font-size: 15px;
+td {
+  padding: 10px 10px;
+}
+
+th {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+tfoot tr td {
+    font-size: 1rem;
 }
