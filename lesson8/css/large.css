@@ -16,9 +16,5 @@ nav ul li a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
-.gallery:hover {
-    box-shadow: 0 0 10px #3a506b;
-}
  
 } /*end large */
