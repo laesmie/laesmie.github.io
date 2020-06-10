@@ -1,0 +1,46 @@
+table {
+    border: 1px solid black;
+    font-family: Ubuntu, sans-serif;
+    margin: 4px;
+    font-size: 25px;
+}
+
+.heading, .footing {
+    background-color: #7fb9c2;
+}
+
+.pssg {
+    background-color: #628ca6;
+    color: white;
+}
+
+.aug, .oct, .bf {
+    background-color: #e7f0ed;
+}
+
+.sep, .nov, .dec {
+    background-color: #e7ffed;
+}
+
+.heading, .pssg, .aug, .sep, .oct, .nov, .bf, .dec {
+    text-align: center;
+    
+}
+
+.heading {
+    text-align: center;
+    font-weight: bold;
+}
+
+.bf {
+    font-style: italic;
+}
+
+.sgm {
+    background-color: #628ca6;
+}
+
+.footing {
+    text-align: center;
+    font-size: 15px;
+}
