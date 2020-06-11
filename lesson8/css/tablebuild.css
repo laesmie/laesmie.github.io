@@ -27,10 +27,15 @@ table {
   }
 
 
-  tr:nth-child(odd) {
-    background-color: #e7f0ed;
-    color: #000000
-  }
+tr:nth-child(odd) {
+  background-color: #e7f0ed;
+  color: #000000
+}
+
+thead tr td {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
 
 
 thead tr td, tfoot tr td {
