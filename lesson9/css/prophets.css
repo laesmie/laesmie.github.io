@@ -16,7 +16,7 @@ h2 {
 }
 
 main {
-    background-color: #6FFFE9;  
+    background-color: #F5F5F5;  
     box-shadow: 0 0 20px #333;
     padding: 15px;
     margin: 10px auto;
@@ -29,7 +29,7 @@ main {
     grid-gap: 10px;
 }
 section {
-    background-color: #5bc0be;
+    background-color: #6FFFE9;
     border: 1px solid #3a506b;
     justify-items: center;
     padding: 0px;
