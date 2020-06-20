@@ -10,21 +10,22 @@ fetch(requestURL)
     const prophets = jsonObject['prophets'];
     for (let i = 0; i < prophets.length; i++ ) {
       let card = document.createElement('section');
-let h2 = document.createElement('h2');
-const myPara1 = document.createElement('p');
-const myPara2 = document.createElement('p');
-const image = document.createElement('img');
 
-h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-myPara1.textContent = 'Date of Birth:  ' + prophets[i].birthdate;
-myPara2.textContent = 'Place of Birth:  ' + prophets[i].birthplace;
-image.setAttribute('src', prophets[i].imageurl);
-image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + prophets[i].order)
+    let h2 = document.createElement('h2');
+    const myPara1 = document.createElement('p');
+    const myPara2 = document.createElement('p');
+    const image = document.createElement('img');
 
-card.appendChild(h2);
-card.appendChild(myPara1);
-card.appendChild(myPara2);
-card.appendChild(image);
+    h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
+    myPara1.textContent = 'Date of Birth:  ' + prophets[i].birthdate;
+    myPara2.textContent = 'Place of Birth:  ' + prophets[i].birthplace;
+    image.setAttribute('src', prophets[i].imageurl);
+    image.setAttribute('alt', prophets[i].name + ' ' + prophets[i].lastname + ' - ' + prophets[i].order)
 
-document.querySelector('div.cards').appendChild(card);}
-  });
+    card.appendChild(h2);
+    card.appendChild(myPara1);
+    card.appendChild(myPara2);
+    card.appendChild(image);
+
+    document.querySelector('div.cards').appendChild(card);}
+});
