@@ -16,5 +16,20 @@ nav ul li a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+div.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.cards section:nth-child(1), div.cards section:nth-child(2), div.cards section:nth-child(3) {
+    display: inline-block;
+}
+
+div.cards section:nth-child(1)  p:nth-child(2), div.cards section:nth-child(2)  p:nth-child(2), div.cards section:nth-child(3)  p:nth-child(2) {
+    color: #3A506B;
+    font-weight: bold;
+    height: 40px;
+}
  
 } /*end large */

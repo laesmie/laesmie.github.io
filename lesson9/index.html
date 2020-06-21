@@ -1,0 +1,98 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="description" content="whatsmyweather.net know the weather, whenever">
+            <meta name="author" content="Kyla Azlin">
+
+            <title>whatsmyweather - Preston</title>
+
+            <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+            <!-- FAVICON -->
+            <link rel="shortcut icon" href="favicon.ico">
+            <!-- STYLE SHEETS -->
+            <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+            <link href="css/normalize.css" rel="stylesheet">
+            <!-- phone-default -->
+            <link href="css/small.css" rel="stylesheet">
+            <!-- enhance-tablet -->
+            <link href="css/medium.css" rel="stylesheet">
+            <!-- enhance-desktop -->
+            <link href="css/large.css" rel="stylesheet">   
+        </head>
+
+        <body>
+        
+            <!-- HEADER HERE -->
+            <div id="headerWrapper">
+                <header>
+                    <img src="images/weatherIcon.png" alt="logo">
+                    <div>
+                        <h1>whatsmyweather.net</h1>
+                        <h2>Know the weather, whenever</h2>
+                    </div>
+                </header>
+            </div>
+
+            <!-- NAVIGATION HERE -->
+        <div id="navWrapper">
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="navigation" class="hide">
+                    <li class="active"><a href="/lesson9/index.html">Home</a></li>
+                    <li><a href="/lesson5/preston.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>    
+                    <li><a href="/lesson9/stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <section>
+                <h2>Town Information</h2>
+                <div class="cards">
+                </div>
+            </section>
+
+            <section class="contactInfo">
+                <h1>Contact Us</h1>
+                    <div class="info">
+                      <div class="address">
+                        <h3>Address</h3>
+                        <p>999 W Street Name</p>
+                        <p>Colorado Springs, CO 81978</p>
+                      </div>
+                      <div class="contact">
+                        <h3>Phone</h3>
+                        <p>(999)123-4567</p>
+                        <h3>Email</h3>
+                        <p>weather@weather.net</p>
+                      </div>
+                    </div>
+                    <div class="map">
+                      <img src="./images/map.jpg" alt="Map of Preston"/>
+                    </div>
+                  </section>
+                  <a href="wireframes.html">Wireframes</a>
+        </main>
+
+        <div id="footerWrapper">
+            <footer>
+                <p>&copy; 2020 &bull; Kyla Azlin &bull; </p>
+                <p id="currentDate"></p>
+            </footer>
+        </div>
+        
+        <script src="js/script.js"></script>
+        <script src="js/banner.js"></script>
+        <script src="js/lazyload.js"></script>
+        <script src="js/webfont.js"></script>
+        <script src="js/towns.js"></script>
+
+    </body>
+
+</html>
