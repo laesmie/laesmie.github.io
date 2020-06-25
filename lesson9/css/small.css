@@ -179,20 +179,19 @@ div.text {
 section.home {
     text-align: center;
     color: #3a506b;
-    margin-top: 17px;
-    margin-bottom: 17px;
-   }
-   
-   body > main > section > div > section:nth-child(1),
-   body > main > section > div > section:nth-child(2),
-   body > main > section > div > section:nth-child(3)   {
-     border: 1px solid #5bc0be;
-   }
-   section.home > h2 {
-     color: #5bc0be;
-   }
-   
-   div.cards {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body > main > section > div > section:nth-child(1), body > main > section > div > section:nth-child(2), body > main > section > div > section:nth-child(3) {
+    border: 1px solid #5bc0be;
+}
+
+section.home > h2 {
+    color: #5bc0be;
+}
+
+div.cards {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: space-evenly;
@@ -202,18 +201,16 @@ section.home {
     overflow: auto;
     background: #F5F5F5;
     text-align: center;
-   
-    
-   }
-   div.cards img {
-     width: 62%;
-     max-height: 250px;
-     padding: 5px;
-     margin: 10px;
-     background-color: #F5F5F5;
-     box-shadow: 0 4px 8px 0 #333, 0 6px 20px 0 black;
-    
-   }
+}
+
+div.cards img {
+    width: 62%;
+    max-height: 250px;
+    padding: 5px;
+    margin: 10px;
+    background-color: #F5F5F5;
+    box-shadow: 0 4px 8px 0 #333, 0 6px 20px 0 black;
+}
 
 /* ------------ contact formatting -----------*/
 .contactInfo {

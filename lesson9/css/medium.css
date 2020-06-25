@@ -45,7 +45,7 @@ nav ul li a {
 
 .weather {
     display: block;
-    background: #5bc0be
+    background: #5bc0be;
 }
 
 .forecast {
@@ -146,7 +146,7 @@ div.cards section:nth-child(2) h2, div.cards section:nth-child(2) p {
 }
 
 div.cards section:nth-child(1)  p:nth-child(2), div.cards section:nth-child(2)  p:nth-child(2), div.cards section:nth-child(3)  p:nth-child(2) {
-    color: ##3A506B;
+    color: #3A506B;
     font-weight: bold;
 }
 
