@@ -113,20 +113,31 @@ div.gallery {
     margin: 20px;
 }
 
+div.cards {
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+
+
+div.cards section:nth-child(1), div.cards section:nth-child(2), div.cards section:nth-child(3) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 div.cards section:nth-child(1) img, div.cards section:nth-child(3) img {
     width: 95%;
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 1 / span 5;
 }
 
 div.cards section:nth-child(2) img {
     width: 95%;
-    grid-column: 2;
-    grid-row: 1;
+    grid-column: 1;
+    grid-row: 1 / span 5;
 }
 
-div.cards section:nth-child(1) h2, div.cards section:nth-child(1) p,   div.cards section:nth-child(3) h2, div.cards section:nth-child(3) p {
-    grid-column: 2;
+div.cards section:nth-child(1) h2, div.cards section:nth-child(1) p, div.cards section:nth-child(3) h2, div.cards section:nth-child(3) p {
+    grid-column: 1;
 }
 
 
@@ -135,7 +146,7 @@ div.cards section:nth-child(2) h2, div.cards section:nth-child(2) p {
 }
 
 div.cards section:nth-child(1)  p:nth-child(2), div.cards section:nth-child(2)  p:nth-child(2), div.cards section:nth-child(3)  p:nth-child(2) {
-    color: #3A506B;
+    color: ##3A506B;
     font-weight: bold;
 }
 
