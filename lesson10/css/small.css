@@ -164,27 +164,16 @@ div.text {
 
 /* ------------ forcast formatting -------- */
 
-.forecast {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.forecast div {
+#weatherforecast {
     display: grid;
     grid-template-columns: 1fr;
     text-align: center; 
     width: 90%;
     margin: 10px auto;
-    background-color: #fff;
-    border: 1px solid #004F2A;
-}
-
-.forecast div h5 {
     background: radial-gradient(white, #5bc0be, #3a506b);
     color: black;
     justify-items: center;
     padding: 8px;
-    margin: 1px;
     border-bottom: black 1px solid;
     border-radius: 10px 10px 0 0;
 }

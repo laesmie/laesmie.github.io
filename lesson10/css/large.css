@@ -32,7 +32,7 @@ div.cards section:nth-child(1)  p:nth-child(2), div.cards section:nth-child(2)  
     height: 40px;
 }
     
-.forecast {
+#weatherforecast {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
