@@ -17,16 +17,6 @@ nav ul li a {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.cards div {
-    display: block;
-}
-
-/*
 div.cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -41,5 +31,10 @@ div.cards section:nth-child(1)  p:nth-child(2), div.cards section:nth-child(2)  
     font-weight: bold;
     height: 40px;
 }
- */
+    
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+    
 } /*end large */
