@@ -17,13 +17,9 @@ nav ul li a {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.cards {
+div.cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}
-
-.cards div {
-    display: block;
 }
 
 .forecast {
