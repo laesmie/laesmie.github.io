@@ -51,20 +51,39 @@ nav ul li a {
     background: #5bc0be;
 }
 
-#weatherforecast {
+.forecast {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 0;
     margin: 10px auto;
+}
+
+.forecast div {
     width: 150px;
     text-align: center;
-    background: radial-gradient(white, #5bc0be, #3a506b);
     background-color: #fff;
+    padding: 0;
+    margin: 2px;
     border: 1px black solid;
     border-radius: 10px;
+}
+
+.forecast div h5 {
+    background: radial-gradient(white, #5bc0be, #3a506b);
     color: black;
     padding: 8px;
+    margin: 1px;
     border-bottom: black 1px solid;
     border-radius: 10px 10px 0 0;
+}
+
+.forecast div img {
+    margin: 7px auto;
+    max-width: 5rem;
+}
+    
+.forecast div span {
+    margin: 7px auto;
 }
 
 .parkGroup {
