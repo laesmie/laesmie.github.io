@@ -1,0 +1,111 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="description" content="whatsmyweather.net know the weather, whenever">
+            <meta name="author" content="Kyla Azlin">
+
+            <title>whatsmyweather - Preston</title>
+
+            <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+            <!-- FAVICON -->
+            <link rel="shortcut icon" href="favicon.ico">
+            <!-- STYLE SHEETS -->
+            <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+            <link href="css/normalize.css" rel="stylesheet">
+            <!-- phone-default -->
+            <link href="css/small.css" rel="stylesheet">
+            <!-- enhance-tablet -->
+            <link href="css/medium.css" rel="stylesheet">
+            <!-- enhance-desktop -->
+            <link href="css/large.css" rel="stylesheet">   
+        </head>
+
+    <body>
+        
+        <!-- HEADER HERE -->
+        <div id="headerWrapper">
+            <header>
+                <img src="images/weatherIcon.png" alt="logo">
+                <div>
+                    <h1>whatsmyweather.net</h1>
+                    <h2>Know the weather, whenever</h2>
+                </div>
+            </header>
+        </div>
+        
+        <!-- NAVIGATION HERE -->
+        <div id="navWrapper">
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="navigation" class="hide">
+                    <li><a href="/lesson9/index.html">Home</a></li>
+                    <li><a href="/lesson5/preston.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>    
+                    <li><a href="/lesson9/stormcenter.html">Storm Center</a></li>
+                    <li class="active"><a href="/lesson9/gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- CONTENT HERE -->
+        <main>
+
+            <h1>Weather Gallery</h1>
+            <div class="galleryWrapper">
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/cloudy1.jpg" alt="cloudy"> 
+                    <div class="text">Add description here</div>
+                </div>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/cloudy2.jpg" alt="cloud">
+                    <div class="text">Add description here</div>
+                </div>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/cloudy3.jpg" alt="cloudy">
+                    <div class="text">Add description here</div>
+                </div>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/sunny1.jpg" alt="sunny">
+                    <div class="text">Add description here</div>
+                </div>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/sunny2.jpg" alt="sunny">
+                    <div class="text">Add description here</div>
+                </div>    
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/sunny3.jpg" alt="sunny">
+                    <div class="text">Add description here</div>
+                </div>   
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src='images/snowy1.jpg' alt="snowy">
+                    <div class="text">Add description here</div>
+                </div>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/snowy2.jpg" alt="snowy">
+                    <div class="text">Add description here</div>
+                </div>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/snowy3.jpg" alt="snowy">
+                    <div class="text">Add description here</div>
+                </div>
+            </div>      
+            <script src="js/lazyload.js"></script>
+        </main>
+        
+        <div id="footerWrapper">
+            <footer>
+                <p>&copy; 2020 &bull; Kyla Azlin &bull; </p>
+                <p id="currentDate"></p>
+            </footer>
+        </div>
+        
+        <script src="js/script.js"></script>
+        <script src="js/banner.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,149 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="description" content="whatsmyweather.net know the weather, whenever">
+            <meta name="author" content="Kyla Azlin">
+
+            <title>whatsmyweather - Preston</title>
+
+            <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+            <!-- FAVICON -->
+            <link rel="shortcut icon" href="favicon.ico">
+            <!-- STYLE SHEETS -->
+            <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+            <link href="css/normalize.css" rel="stylesheet">
+            <!-- phone-default -->
+            <link href="css/small.css" rel="stylesheet">
+            <!-- enhance-tablet -->
+            <link href="css/medium.css" rel="stylesheet">
+            <!-- enhance-desktop -->
+            <link href="css/large.css" rel="stylesheet">   
+        </head>
+
+    <body>
+        
+        <!-- HEADER HERE -->
+        <div id="headerWrapper">
+            <header>
+                <img src="images/weatherIcon.png" alt="logo">
+                <div>
+                    <h1>whatsmyweather.net</h1>
+                    <h2>Know the weather, whenever</h2>
+                </div>
+            </header>
+        </div>
+        
+        <!-- NAVIGATION HERE -->
+        <div id="navWrapper">
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="navigation" class="hide">
+                    <li><a href="/lesson9/index.html">Home</a></li>
+                    <li class="active"><a href="/lesson10/preston.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>    
+                    <li><a href="/lesson9/stormcenter.html">Storm Center</a></li>
+                    <li><a href="/lesson9/gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- CONTENT HERE -->
+        <main>
+            <div id="banner" hidden>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+            <h1>Preston</h1>
+            <section class="hero">
+                <div class="hero-img">
+                    <img src="images/hero.jpg" alt="Aerial view of town">
+                    <div class="summary">
+                        <h2>Today's Weather</h2>
+                            <p>Current: <span id='current'></span></p>
+                            <p>Today's High: <span id='high'>00</span>&deg;</p>
+                            <p>Humidity: <span id='humidity'>%</span></p>
+                            <p>Wind Speed: <span id='windSpeed'>xx</span>mph</p>
+                            <p>Wind Chill: <span id='chill'></span></p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="weather">
+                <h2>Five day Forecast</h2>
+                <div class="forecast">
+                    <div>
+                        <h5><span id="span"></span></h5>
+                        <img id="iconPath" src="images/wiph.png" alt="current weather">
+                        <span id="theTemp">&deg;</span>
+                    </div>
+                    <div>
+                        <h5><span id="span"></span></h5>
+                        <img id="iconPath" src="images/wiph.png" alt="current weather">
+                        <span id="theTemp">&deg;</span>
+                    </div>
+                    <div>
+                        <h5><span id="span"></span></h5>
+                        <img id="iconPath" src="images/wiph.png" alt="current weather">
+                        <span id="theTemp">&deg;</span>
+                    </div>
+                    <div>
+                        <h5><span id="span"></span></h5>
+                        <img id="iconPath" src="images/wiph.png" alt="current weather">
+                        <span id="theTemp">&deg;</span>
+                    </div>
+                    <div>
+                        <h5><span id="span"></span></h5>
+                        <img id="iconPath" src="images/wiph.png" alt="current weather">
+                        <span id="theTemp">&deg;</span>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="article">
+                <h2>About Preston</h2>
+
+                <p>Information about Preston will go here.</p>
+
+                <p>More information about Preston will go here.</p>
+
+                <p>EVEN MORE information about Preston will go here.</p>
+                <div class="parkGroup"><img src="images/parkGroup.jpg" alt="Friends in park hanging out"></div>
+            </section>
+            
+            <section class="contactInfo">
+            <h1>Contact Us</h1>
+                <div class="info">
+                  <div class="address">
+                    <h3>Address</h3>
+                    <p>999 W Street Name</p>
+                    <p>Colorado Springs, CO 81978</p>
+                  </div>
+                  <div class="contact">
+                    <h3>Phone</h3>
+                    <p>(999)123-4567</p>
+                    <h3>Email</h3>
+                    <p>weather@weather.net</p>
+                  </div>
+                </div>
+                <div class="map">
+                  <img src="./images/map.jpg" alt="Map of Preston"/>
+                </div>
+              </section>     
+        </main>
+        
+        <div id="footerWrapper">
+            <footer>
+                <p>&copy; 2020 &bull; Kyla Azlin &bull; </p>
+                <p id="currentDate"></p>
+            </footer>
+        </div>
+        
+        <script src="js/script.js"></script>
+        <script src="js/weather.js"></script>
+        <script src="js/banner.js"></script>
+        <script src="js/forecast.js"></script>
+
+    </body>
+
+</html>

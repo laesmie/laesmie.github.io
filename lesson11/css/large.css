@@ -1,0 +1,40 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+
+header, nav, main, footer {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+nav ul li a {
+    padding: .8rem 1.4rem;
+    font-size: .9rem;
+}
+
+.galleryWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.cards section:nth-child(1), div.cards section:nth-child(2), div.cards section:nth-child(3) {
+    display: inline-block;
+}
+
+div.cards section:nth-child(1)  p:nth-child(2), div.cards section:nth-child(2)  p:nth-child(2), div.cards section:nth-child(3)  p:nth-child(2) {
+    color: #3A506B;
+    font-weight: bold;
+    height: 40px;
+}
+    
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+    
+} /*end large */
