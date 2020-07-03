@@ -41,7 +41,7 @@ let wc = 35.74 + (0.6215 * tempNumber) - (37.75 * Math.pow(speedNumber, 0.16)) +
 
 wc = Math.round(wc);
 
-if(tempNumber < =  50 && speedNumber > 3) {
+if(tempNumber <= 50 && speedNumber > 3) {
     
     document.getElementById("chill").textContent = "Wind Chill is " +wc+ "\xB0F"; 
     
