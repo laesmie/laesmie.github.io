@@ -1,153 +1,150 @@
-/* 35em is also 560px when basefont is 16px */
-@media only screen and (min-width: 35rem) {
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 670px) {
 
-header {
-    padding: 5px;
-}
 
-header img {
-    width: 100px;
-}
+    /*---------- HEADER ALL ----------*/
 
-.headings h1 {
-    font-size: 2rem;
-    letter-spacing: .14rem;
-}
+    header {
+        padding: 5px;
+    }
 
-.headings h2 {
-    font-size: 1.2rem;
-    letter-spacing: .08rem;
-}
+    header img {
+        width: 100px;
+    }
 
-nav {
-    display: flex;
-}
+    .headings h1 {
+        font-size: 2rem;
+        letter-spacing: .14rem;
+    }
 
-nav button {
-    display: none;
-}
+    .headings h2 {
+        font-size: 1.2rem;
+        letter-spacing: .08rem;
+    }
 
-nav ul.hide {
-    display: flex;
-}
+    /*----------- NAVIGATION ALL --------------*/
 
-nav ul li {
-   display: block;
-   flex: 1 1 auto;
-}
+    /* No changes */
 
-nav ul li a {
-    border: none;
-    border-right: 1px solid black;
-    padding: .6rem 1rem;
-    font-size: .78rem;
-}
+    /*---------- BODY ALL ----------*/
+
+    /* No changes */
+
+    /*----------- MAIN --------------*/
+
+    /* No changes */
+
+    /*---------- FOOTER ALL ----------*/
+
+    /* No changes*/
+
+    /*---------- CONTACT US ALL ----------*/
+
+    .contact {
+        display: inline;
+        clear: right;
+        grid-column: 1/2;
+    }
+
+    .map {
+        float: right;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*---------- CLEARFIX ALL ----------*/
+
+    /* No changes*/
+
+    /*---------- CARDS - INDEX ----------*/
+
+    div.cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.cards h3 {
+        border-top: none;
+    }
+
+    div.cards h3, div.cards h4, div.cards p {
+        grid-column: 1 / 2;
+        text-align: center;
+    }
+
+    div.cards img {
+        align-self: center;
+        justify-self: center;
+    }
+
+    /*---------- HERO - P, SS, FH ----------*/
+
+    /* No changes */
+
+    /*---------- WEATHER SUMMARY - P, SS, FH ----------*/
+
+    /* No changes */
+
+    /*---------- FIVE-DAY FORECAST - P, SS, FH ----------*/
     
-.summary {
-    max-height: 275px;
-}
+    #five-day {
+        display: block;
+        background: -moz-linear-gradient(top,  #5bc0be 0%, #3a506b 100%);
+        background: -webkit-linear-gradient(top,  #5bc0be 0%,#3a506b 100%);
+        background: linear-gradient(to bottom,  #5bc0be 0%,#3a506b 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5bc0be', endColorstr='#3a506b',GradientType=0 );
+        opacity: .7;
+        padding: 15px 5px;
+    }
 
-.weather {
-    background: #5bc0be;
-}
+    section.forecast {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin-bottom: 10px;
+    }
 
-.forecast {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0;
-    margin: 10px auto;
-}
+    section.forecast div {
+        text-align: center;
+        border: 1.5px solid #5bc0be;
+    }
 
-.forecast div {
-    width: 150px;
-    text-align: center;
-    background-color: #fff;
-    padding: 0;
-    margin: 2px;
-    border: 1px black solid;
-    border-radius: 10px;
-}
+    section.forecast div h3 {
+        background: -moz-linear-gradient(top,  #3a506b 0%, #5bc0be 100%);
+        background: -webkit-linear-gradient(top,  #3a506b 0%,#5bc0be 100%);
+        background: linear-gradient(to bottom,  #3a506b 0%,#5bc0be 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a506b', endColorstr='#5bc0be',GradientType=0 );
+        color: white;
+        margin: 0;
+        padding: 1rem 0;
+    }
 
-.forecast div h5 {
-    background: radial-gradient(white, #5bc0be, #3a506b);
-    color: black;
-    padding: 8px;
-    margin: 1px;
-    border-bottom: black 1px solid;
-    border-radius: 10px 10px 0 0;
-}
+    section.forecast div img {
+        padding: 10px;
+        width: 4rem;
+    }
 
-.forecast div img {
-    margin: 7px auto;
-    max-width: 5rem;
-}
+    /*---------- ARTICLE - P, SS, FH ----------*/
+
+    .article img {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        float: right;
+        width: 350px;
+    }
+
+    /*----------- GALLERY --------------*/
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container img {
+        max-width: 100%;
+    }
     
-.forecast div span {
-    margin: 7px auto;
-}
-
-.parkGroup {
-    padding: 20px;
-    max-width: 600px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
-.map {
-    flex: 1.5;
-}
-
-.map img {
-    width: 100%;
-    margin: 2px;
-}
-
-.galleryWrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-div.gallery {
-    margin: 20px;
-}
-
-div.cards {
-    grid-template-columns: 1fr;
-    grid-gap: 5px;
-}
-
-
-div.cards section:nth-child(1), div.cards section:nth-child(2), div.cards section:nth-child(3) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-div.cards section:nth-child(1) img, div.cards section:nth-child(3) img {
-    width: 95%;
-    grid-column: 2;
-    grid-row: 1 / span 5;
-}
-
-div.cards section:nth-child(2) img {
-    width: 95%;
-    grid-column: 1;
-    grid-row: 1 / span 5;
-}
-
-div.cards section:nth-child(1) h2, div.cards section:nth-child(1) p, div.cards section:nth-child(3) h2, div.cards section:nth-child(3) p {
-    grid-column: 1;
-}
-
-
-div.cards section:nth-child(2) h2, div.cards section:nth-child(2) p {
-    grid-column: 2;
-}
-
-div.cards section:nth-child(1)  p:nth-child(2), div.cards section:nth-child(2)  p:nth-child(2), div.cards section:nth-child(3)  p:nth-child(2) {
-    color: #3A506B;
-    font-weight: bold;
-}
-
-} /*end medium */
+} /* end of media query */

@@ -24,7 +24,7 @@
     
     <body>
     <!-- HEADER HERE -->
-        <div id="headerWrapper">
+        <div id="headWrapper">
             <header>
                 <img src="images/weatherIcon.png" alt="logo">
                 <div>
@@ -38,13 +38,13 @@
         <div id="navWrapper">
             <nav class="clearfix">
                 <button onclick="toggleMenu()">&#9776;</button>
-                <ul id="navigation" class="hide">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="/lesson5/preston.html">Preston</a></li>
-                    <li><a href="#">Soda Springs</a></li>
-                    <li><a href="#">Fish Haven</a></li>    
-                    <li><a href="stormcenter.html">Storm Center</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="/lesson11/index.html">Home</a></li>
+                    <li><a href="/lesson11/preston.html">Preston</a></li>
+                    <li><a href="/lesson11/sodasprings.html">Soda Springs</a></li>
+                    <li><a href="/lesson11/fishhaven.html">Fish Haven</a></li>    
+                    <li><a href="/lesson11/stormcenter.html">Storm Center</a></li>
+                    <li><a href="/lesson11/gallery.html">Gallery</a></li>
                 </ul>
             </nav>
         </div>
@@ -52,15 +52,16 @@
 
     <!-- CONTENT HERE -->
         <main>
-            <h1>Thank you!</h1>
-                <p>Thank you for your submission. Your submission has been sent to our weather watching team. Your contribution helps us to keep our site updated with the most up-to-date information about the weather in your area.</p>
+            <section id="ty">
+                <h1>Thank you!</h1>
+                    <p>Thank you for your submission. This has been sent to our weather watching team. Your contribution helps us to keep our site updated with the most up-to-date information about the weather in your area!</p>
+            </section>
         </main>
 
     <!-- FOOTER HERE -->   
-        <div id="footerWrapper">
-            <footer>
-                <p>&copy; 2020 &bull; Kyla Azlin &bull; </p>
-                <p id="currentDate"></p>
+        <div id="footWrapper">
+            <footer class="clearfix">
+                &copy; 2020 &bull; Kyla Azlin &bull; <span id="currentDate"></span>
             </footer>
         </div>
         

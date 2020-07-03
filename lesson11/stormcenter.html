@@ -28,7 +28,7 @@
     <body>
         
         <!-- HEADER HERE -->
-        <div id="headerWrapper">
+        <div id="headWrapper">
             <header>
                 <img src="images/weatherIcon.png" alt="logo">
                 <div>
@@ -42,13 +42,13 @@
         <div id="navWrapper">
             <nav class="clearfix">
                 <button onclick="toggleMenu()">&#9776;</button>
-                <ul id="navigation" class="hide">
-                    <li><a href="/lesson9/index.html">Home</a></li>
-                    <li><a href="/lesson5/preston.html">Preston</a></li>
-                    <li><a href="#">Soda Springs</a></li>
-                    <li><a href="#">Fish Haven</a></li>    
-                    <li class="active"><a href="/lesson9/stormcenter.html">Storm Center</a></li>
-                    <li><a href="/lesson9/gallery.html">Gallery</a></li>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="/lesson11/index.html">Home</a></li>
+                    <li><a href="/lesson11/preston.html">Preston</a></li>
+                    <li><a href="/lesson11/sodasprings.html">Soda Springs</a></li>
+                    <li><a href="/lesson11/fishhaven.html">Fish Haven</a></li>    
+                    <li class="active"><a href="/lesson11/stormcenter.html">Storm Center</a></li>
+                    <li><a href="/lesson11/gallery.html">Gallery</a></li>
                 </ul>
             </nav>
         </div>
@@ -124,16 +124,13 @@
                 </form> 
         </main>
         
-        <div id="footerWrapper">
-            <footer>
-                <p>&copy; 2020 &bull; Kyla Azlin &bull; </p>
-                <p id="currentDate"></p>
+        <div id="footWrapper">
+            <footer class="clearfix">
+                &copy; 2020 &bull; Kyla Azlin &bull; <span id="currentDate"></span>
             </footer>
         </div>
         
         <script src="js/script.js"></script>
-        <script src="js/banner.js"></script>
-        <script src="js/rating.js"></script>
 
     </body>
 
