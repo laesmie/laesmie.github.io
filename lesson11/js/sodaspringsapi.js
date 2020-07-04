@@ -30,22 +30,3 @@ fetch(apiURL)
     document.getElementById('jsonsum').appendChild(summary);
    
   });
-
-
-/* wind chill */
-const tempNumber = parseFloat(document.getElementById("temp").textContent);
-
-const speedNumber = parseFloat(document.getElementById("speed").textContent);
-
-let wc = 35.74 + (0.6215 * tempNumber) - (37.75 * Math.pow(speedNumber, 0.16)) + (0.4275 * tempNumber * Math.pow(speedNumber, 0.16));
-
-wc = Math.round(wc);
-
-if(tempNumber <= 50 && speedNumber > 3) {
-    
-    document.getElementById("chill").textContent = "Wind Chill is " +wc+ "\xB0F"; 
-    
-    } else {
-        
-        document.getElementById("chill").textContent = "No Wind Chill today"
-    }

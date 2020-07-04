@@ -5,7 +5,7 @@
         <meta name="description" content="whatsmyweather.net know the weather, whenever">
         <meta name="author" content="Kyla Azlin">
         
-        <title>whatsmyweather - Preston</title>
+        <title>whatsmyweather</title>
 
         <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -52,68 +52,68 @@
             </nav>
         </div>
 
-    <main>
-        <div id="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
-        <h1>Fish Haven</h1>
-        <div class="herodiv">
-            <img src="images/fishhaven.jpg" alt="Fish Haven Image">
-            <section class="summary">
-                <h2>Weather Summary</h2>
-                <div id="jsonsum">
-                </div>
-            </section>
-        </div>
+        <main>
+            <div id="banner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+            <h1>Fish Haven</h1>
+            <div class="herodiv">
+                <img src="images/fishhaven.jpg" alt="Fish Haven Image">
+                <section class="summary">
+                    <h2>Weather Summary</h2>
+                    <div id="jsonsum">
+                    </div>
+                </section>
+            </div>
 
-        
-        <h2 id="five-day">Five Day Forecast</h2>
-        <section class="forecast" id="livesum">
-            
-        </section>
 
-        <div class="article">
-            <h2>Welcome</h2>
-            <p>Idaho has a variety of activites to keep you and your family happy - whether you are moving or just visiting. Some of these activites include:</p>
-            <ul>
-                <li>Amusement Parks</li>
-                <li>Biking</li>
-                <li>Camping/Hiking</li>
-                <li>Fishing</li>
-                <li>Water Sports</li>
-                <li>And so much more!</li>
-            </ul>
-            <p>Let us help you plan your stay with us! You can find more information here at <a href="https://visitidaho.org/things-to-do/fishing/big-wood-river/" target="_blank"> visitIdaho.org</a>.</p>
-        </div>
-
-        <div id="box">
-            <h2>Contact Us</h2>
-            <section class="contact">
-                <h3>Address:</h3>
-                <p>999 W Street Name<br>
-                    Colorado Springs, CO 81978</p>
-                <h3>Phone:</h3>
-                <p>(999)123-4567</p>
-                <h3>Email:</h3>
-                <p>weather@weather.net</p>
+            <section class="weatherforecast">
+                <h2>Five Day Forecast</h2>
             </section>
 
-            <section class="map">
-            <iframe src="https://maps.google.com/maps?q=fish%20haven%2C%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                    width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </section>
-        </div>
+            <div class="article">
+                <h2>Welcome</h2>
+                <p>Idaho has a variety of activites to keep you and your family happy - whether you are moving or just visiting. Some of these activites include:</p>
+                <ul>
+                    <li>Amusement Parks</li>
+                    <li>Biking</li>
+                    <li>Camping/Hiking</li>
+                    <li>Fishing</li>
+                    <li>Water Sports</li>
+                    <li>And so much more!</li>
+                </ul>
+                <p>Let us help you plan your stay with us! You can find more information here at <a href="https://visitidaho.org/things-to-do/fishing/big-wood-river/" target="_blank"> visitIdaho.org</a>.</p>
+            </div>
 
-    </main>
+            <div id="box">
+                <h2>Contact Us</h2>
+                <section class="contact">
+                    <h3>Address:</h3>
+                    <p>999 W Street Name<br>
+                        Colorado Springs, CO 81978</p>
+                    <h3>Phone:</h3>
+                    <p>(999)123-4567</p>
+                    <h3>Email:</h3>
+                    <p>weather@weather.net</p>
+                </section>
 
-    <div id="footWrapper">
+                <section class="map">
+                <iframe src="https://maps.google.com/maps?q=fish%20haven%2C%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </section>
+            </div>
+
+        </main>
+
+        <div id="footWrapper">
             <footer class="clearfix">
-                &copy; 2020 &bull; Kyla Azlin &bull; <span id="currentDate"></span>
+                &copy; 2020 &bull; Kyla Azlin &bull; <span id="currentDate"></span> &bull;
+                <a href="https://openweathermap.org/" target="_blank">OpenWeather</a>
             </footer>
         </div>
 
-    <script src="js/script.js"></script>
-    <script src="js/fishhavenapi.js"></script>
-    <script src="js/forecastfishhaven.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/fishhavenapi.js"></script>
+        <script src="js/forecastfishhaven.js"></script>
 
-</body>
+    </body>
 
 </html>

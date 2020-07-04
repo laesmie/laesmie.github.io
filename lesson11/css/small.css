@@ -240,17 +240,13 @@ div.cards h4 {
 	box-shadow: 0 0 30px #eee;
     color: black;
     text-align: center;
-    max-height: 400px;
+    max-height: 280px;
     font-size: 1.1rem;
 }
 
 /*---------- FIVE-DAY FORECAST - P, SS, FH ----------*/
 
-#five-day {
-    display: none;
-}
-
-section.forecast {
+section.weatherforecast {
     display: none;
 }
 

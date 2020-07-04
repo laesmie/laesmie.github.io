@@ -86,7 +86,10 @@
 
     /*---------- FIVE-DAY FORECAST - P, SS, FH ----------*/
     
-    /* No changes */
+    section.weatherforecast {
+        display: block;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
 
     /*---------- ARTICLE - P, SS, FH ----------*/
     
