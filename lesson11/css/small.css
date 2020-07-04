@@ -247,7 +247,36 @@ div.cards h4 {
 /*---------- FIVE-DAY FORECAST - P, SS, FH ----------*/
 
 section.weatherforecast {
-    display: none;
+    padding-bottom: 5px;
+}
+
+div#fivedayforecast {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+div#fivedayforecast div {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;  
+    width: 90%;
+    margin: 10px auto;
+    background-color: #fff;
+    border: 1px solid #004F2A;
+}
+
+div#fivedayforecast div span {
+    display: block;
+    width: 100%;
+    background-color: #004F2A;
+    text-align: center;
+    color: #E5E059;
+    padding: 5px;
+    font-weight: bold;
+}
+
+div#fivedayforecast div p {
+    margin-top: 0;
 }
 
 /*---------- ARTICLE - P, SS, FH ----------*/

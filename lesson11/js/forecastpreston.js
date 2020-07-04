@@ -1,30 +1,58 @@
 // Preston City ID: 5604473
 // API Key: 3e14468cd1a62388166001da6f7daa51
 
-const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&appid=3e14468cd1a62388166001da6f7daa51&units=imperial";
+const apiURL = "//api.openweathermap.org/data/2.5/weather?id=5604473&appid=3e14468cd1a62388166001da6f7daa51&units=imperial";
 
+
+// weather summary
+fetch(apiURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
+
+    let summary = document.createElement('article');
+    let p1 = document.createElement('p');
+    let p2 = document.createElement('p');
+    let p3 = document.createElement('p');
+    let p4 = document.createElement('p');
+    let p5 = document.createElement('p');
+
+    p1.innerHTML = `<strong>Current:</strong>  ${jsObject.main.temp} &deg;F`;
+    p2.innerHTML = `<strong>High:</strong>  ${jsObject.main.temp_max} &degF`;
+    p3.innerHTML = `<strong>Humidity:</strong>  ${jsObject.main.humidity} %`;
+    p4.innerHTML = `<strong>Wind Speed:</strong>  ${jsObject.wind.speed} mph`;
+    p5.innerHTML = `<strong>Wind Chill:</strong>  ${jsObject.wind.humidity} &degF`;
+
+    summary.appendChild(p1);
+    summary.appendChild(p2);
+    summary.appendChild(p3);
+    summary.appendChild(p4);
+    summary.appendChild(p5);
+
+    document.getElementById('jsonsum').appendChild(summary);
+   
+  });
+
+
+// wind chill
+const tempNumber = parseFloat(document.getElementById("currentTemp").textContent);
+const speedNumber = parseFloat(document.getElementById("windSpeed").textContent);
+
+let windChill = 35.74 + (.06215 * tempNumber) - (35.75 * Math.pow(speedNumber, 0.16)) + (0.4275 * tempNumber * Math.pow(speedNumber, 0.16));
+windChill = Math.round(windChill);
+
+if (tempNumber <= 50 && speedNumber > 3) {
+    document.getElementById("chill").textContent = windChill + "\xb0 F";
+    } else {
+    document.getElementById("chill").textContent = "N/A";
+    }
+
+
+// five-day forecast
 fetch(apiURL)
     .then((response) => response.json())
     .then((weatherInfo) => {
-
-
-        document.getElementById('description').innerHTML = weatherInfo.list[0].weather[0].description;
-        document.getElementById('currentTemp').innerHTML = weatherInfo.list[0].main.temp;
-        document.getElementById('humidity').innerHTML = weatherInfo.list[0].main.humidity;
-        document.getElementById('windSpeed').innerHTML = weatherInfo.list[0].wind.speed;
-
-        // wind chill
-        const tempNumber = parseFloat(document.getElementById("currentTemp").textContent);
-        const speedNumber = parseFloat(document.getElementById("windSpeed").textContent);
-
-        let windChill = 35.74 + (.06215 * tempNumber) - (35.75 * Math.pow(speedNumber, 0.16)) + (0.4275 * tempNumber * Math.pow(speedNumber, 0.16));
-        windChill = Math.round(windChill);
-
-        if (tempNumber <= 50 && speedNumber > 3) {
-            document.getElementById("chill").textContent = windChill + "\xb0 F";
-            } else {
-            document.getElementById("chill").textContent = "N/A";
-            }
+        console.log(weatherInfo);
 
         // today
         const d = new Date();
@@ -71,7 +99,7 @@ fetch(apiURL)
         theDay.appendChild(theIcon);
         theDay.appendChild(theTemp);
 
-        document.getElementById('weatherforecast').appendChild(theDay);
+        document.getElementById('fivedayforecast').appendChild(theDay);
 
         }// end if
     }// end for

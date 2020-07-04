@@ -91,7 +91,7 @@
     /* No changes */
 
     /*---------- FIVE-DAY FORECAST - P, SS, FH ----------*/
-    
+
     section.weatherforecast {
         display: block;
         background: -moz-linear-gradient(top,  #5bc0be 0%, #3a506b 100%);
@@ -100,7 +100,6 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5bc0be', endColorstr='#3a506b',GradientType=0 );
         opacity: .7;
         padding: 15px 5px;
-        grid-template-columns: 1fr 1fr 1fr;
         margin-bottom: 10px;
     }
 
@@ -123,7 +122,12 @@
         padding: 10px;
         width: 4rem;
     }
-
+    
+    div#fivedayforecast {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
     /*---------- ARTICLE - P, SS, FH ----------*/
 
     .article img {

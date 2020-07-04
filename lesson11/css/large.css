@@ -86,9 +86,9 @@
 
     /*---------- FIVE-DAY FORECAST - P, SS, FH ----------*/
     
-    section.weatherforecast {
-        display: block;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    #fivedayforecast  {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
     }
 
     /*---------- ARTICLE - P, SS, FH ----------*/
