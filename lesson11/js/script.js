@@ -1,12 +1,21 @@
-/* menu */
+// webfonts
+WebFont.load({
+    google: {
+        familes: [
+            'Rock Salt', 'Gathathri'
+        ]
+    }
+});
+
+
+// menu
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
 }
 
 
-/* current date in footer */
-var today = new Date();
-var weekday = [
+// current date in footer
+const days = [
     "Sunday",
     "Monday",
     "Tuesday",
@@ -14,10 +23,9 @@ var weekday = [
     "Thursday",
     "Friday",
     "Saturday"
-]
+];
 
-var date = today.getDate();
-var month = [
+const months = [
     "January",
     "February",
     "March",
@@ -30,64 +38,17 @@ var month = [
     "October",
     "November",
     "December"
-]
+];
 
-var year = today.getFullYear();
-
-document.getElementById('currentDate').innerHTML = weekday[today.getDay()] + ", " + date + " " + month[today.getMonth()] + " " + year ;
-
-
-/* banner message */
-const day = new Date();
-console.log(day);
-
-const dayNumber = day.getDay();
-console.log(dayNumber);
-
-const element = document.getElementById("banner");
-
-if (dayNumber == 5) {
-    element.classList.add("showme");
-}
-else {
-    element.classList.add("hideme");
-}
+const d = new Date();
+const dayName = days[d.getDay()];
+const monthName = months[d.getMonth()];
+const year = d.getFullYear();
+const fulldate = dayName + ", " + d.getDate() + " " + monthName + " " + year;
+document.getElementById("currentDate").textContent = fulldate;
 
 
-//lazy loading
-const imagesToLoad = document.querySelectorAll('img[data-src]');
-
-const loadImages = function(image) {
-	image.setAttribute('src', image.getAttribute('data-src'));
-	image.onload = function() {
-		image.removeAttribute('data-src');
-	};
-};
-
-if('IntersectionObserver' in window) {
-	var observer = new IntersectionObserver(function(items, observer) {
-		items.forEach(function(item) {
-			if(item.isIntersecting) {
-				loadImages(item.target);
-				observer.unobserve(item.target);
-			}
-		});
-	});
-	imagesToLoad.forEach(function(img) {
-		observer.observe(img);
-	});
-}
-else {
-	imagesToLoad.forEach(function(img) {
-		loadImages(img);
-	});
-}
-
-
-
-
-
-/* rating */
+// rating
 function adjustRating(rating) {
     document.getElementById("ratingvalue").innerHTML = rating;
 }

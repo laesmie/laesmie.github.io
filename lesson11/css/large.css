@@ -53,12 +53,8 @@
     
     /*---------- CONTACT US ALL ----------*/
     
-    .map {
-        justify-self: end;
-    }
-    
     .contact {
-        padding: 15px 30px;
+        padding: 0 30px;
     }
     
     /*---------- CLEARFIX ALL ----------*/
@@ -68,7 +64,11 @@
     /*---------- CARDS - INDEX ----------*/
 
     div.cards {
-        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 15px;   
+        justify-content: center;
+        align-items: center;
     }
     
     div.cards h4 {
@@ -82,6 +82,10 @@
 
     /*---------- WEATHER SUMMARY - P, SS, FH ----------*/
 
+    /* No changes */
+    
+    /*---------- UPCOMING EVENTS - P, SS, FH ----------*/
+    
     /* No changes */
 
     /*---------- FIVE-DAY FORECAST - P, SS, FH ----------*/
