@@ -86,7 +86,7 @@
 
     /*---------- FIVE-DAY FORECAST - P, SS, FH ----------*/
     
-    #fivedayforecast  {
+    #weatherforecast  {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
     }

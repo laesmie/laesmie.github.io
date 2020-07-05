@@ -99,7 +99,7 @@ fetch(apiURL)
         theDay.appendChild(theIcon);
         theDay.appendChild(theTemp);
 
-        document.getElementById('fivedayforecast').appendChild(theDay);
+        document.getElementById('weatherforecast').appendChild(theDay);
 
         }// end if
     }// end for

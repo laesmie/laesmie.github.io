@@ -92,7 +92,7 @@
 
     /*---------- FIVE-DAY FORECAST - P, SS, FH ----------*/
 
-    section.weatherforecast {
+    #weatherforecast {
         display: block;
         background: -moz-linear-gradient(top,  #5bc0be 0%, #3a506b 100%);
         background: -webkit-linear-gradient(top,  #5bc0be 0%,#3a506b 100%);
@@ -101,14 +101,16 @@
         opacity: .7;
         padding: 15px 5px;
         margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    section.weatherforecast div {
+    #weatherforecast div {
         text-align: center;
         border: 1.5px solid #5bc0be;
     }
 
-    section.weatherforecast div h3 {
+    #weatherforecast div h3 {
         background: -moz-linear-gradient(top,  #3a506b 0%, #5bc0be 100%);
         background: -webkit-linear-gradient(top,  #3a506b 0%,#5bc0be 100%);
         background: linear-gradient(to bottom,  #3a506b 0%,#5bc0be 100%);
@@ -118,14 +120,9 @@
         padding: 1rem 0;
     }
 
-    section.weatherforecast div img {
+    #weatherforecast div img {
         padding: 10px;
         width: 4rem;
-    }
-    
-    div#fivedayforecast {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
     }
     
     /*---------- ARTICLE - P, SS, FH ----------*/
