@@ -73,7 +73,7 @@ fetch(apiURL)
             theDay.appendChild(theIcon);
             theDay.appendChild(theTemp);
             
-        document.getElementById('weatherforcast').appendChild(theDay);
+        document.getElementById('weatherforecast').appendChild(theDay);
             
         } // end if
     }// end for
@@ -81,7 +81,7 @@ fetch(apiURL)
 
 
 // events for towns
-const requestURL = 'https"//byui-cit230.github.io/weather/data/towndata.json';
+const requestURL = 'http"//byui-cit230.github.io/weather/data/towndata.json';
 
 fetch(requestURL)
     .then(function (response) {
