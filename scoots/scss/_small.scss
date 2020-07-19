@@ -1,0 +1,363 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS */
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*---------- apply a natural box layout model to all elements ----------*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*---------- HEADER ----------*/
+
+header {
+    padding: .5rem 2%;
+    background: -moz-linear-gradient(top,  #ef6351 10%, #ffe3e0 86%, #ffe3e0 86%);
+    background: -webkit-linear-gradient(top,  #ef6351 10%,#ffe3e0 86%,#ffe3e0 86%);
+    background: linear-gradient(to bottom,  #ef6351 10%,#ffe3e0 86%,#ffe3e0 86%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef6351', endColorstr='#ffe3e0',GradientType=0 );
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    
+    img {
+        float: left;
+        margin-right: 7px;
+        width: 200px;
+        padding: 2px;
+    }
+    
+    h1 {
+        text-align: left;
+        margin: 80px 0 2px 0;
+        font-size: 3rem;
+        font-family: $fontfamily1;
+    }
+    
+    h2 {
+       text-align: left;
+        margin: 3px 0;
+        font-size: 1.3rem;
+        font-family: $fontfamily2; 
+    }
+}
+
+/*---------- NAVIGATION ----------*/
+
+div#navWrapper {
+    background-color: #f7a399;
+}
+
+nav {
+    border-top: 1px solid white;
+}
+
+nav button {
+    margin: .2rem 2%;
+    padding: .5rem;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #ffe3e0;
+}
+    
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffe3e0;
+    padding: 1rem 0;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    border-right: 1px solid #f38375;
+}
+
+nav ul li.active a {
+    font-size: 1.3rem;
+    background-color: #f38375;
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: #fbc3bc;
+    color: black;
+}
+
+nav ul.hide {
+    display: none;
+}
+ 
+/*---------- BODY ----------*/
+
+body {
+    font-size: 16px;
+}
+
+/*---------- MAIN ----------*/
+
+.cta, .cozumel, .forecast, .contactInfo, #ty {
+    border: 3px solid #ef6351;
+    border-radius: 5px;
+    padding: 0;
+    margin: 10px;
+}
+
+main section.cozumel, main section.contactInfo, main section.forecast {
+    padding: .8rem 2%;
+    text-align: center;
+}
+
+main h2, #ty {
+    font-size: 40px;
+    font-family: $fontfamily1;
+    border-bottom: 2px solid black;
+    text-align: center;
+    border-bottom-width: 2px;
+}
+
+main h3 {
+    margin: 25px 0 0 0;
+    padding-top: 3px 0;
+    font-size: 35px;
+    font-family: $fontfamily1;
+}
+
+main p {
+    margin: 0;
+    padding-top: 2px;
+    font-family: $fontfamily2;
+}
+
+#map1, #map2 {
+    display: none;
+}
+
+/*---------- FOOTER ----------*/
+
+footer {
+    background: -moz-linear-gradient(top,  #ffe3e0 10%, #ef6351 86%, #ef6351 86%);
+    background: -webkit-linear-gradient(top,  #ffe3e0 10%,#ef6351 86%,#ef6351 86%);
+    background: linear-gradient(to bottom,  #ffe3e0 10%,#ef6351 86%,#ef6351 86%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe3e0', endColorstr='#ef6351',GradientType=0 );
+    padding: 1rem 2%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffe3e0;
+    font-family: $fontfamily1;
+}
+
+/*---------- CALL TO ACTION - HOME ----------*/
+
+.cta {
+    h2 {
+    font-size: 50px;
+    font-family: $fontfamily1;
+    text-align: center;
+    padding: 0;
+    margin: 10px;
+    }
+    p {
+    font-size: 20px;
+    font-family: $fontfamily2;
+    text-align: center;
+    margin: 20px;
+    }
+    ul {
+        font-size: 20px;
+        font-family: $fontfamily2;
+        text-align: center;
+        margin: 20px;
+    }
+}
+
+/*---------- WEATHER SUMMARY - HOME ----------*/
+
+.ws {
+    top: 20px;
+	bottom: 20px;
+	left: 20px;
+	background: #f38375;
+    opacity: .9;
+	padding: .5rem;
+	box-shadow: 0 0 30px #eee;
+    text-align: center;
+    max-height: 240px;
+    font-size: 1.1rem;
+    h2 {
+        display: block;
+        color: white;
+        border-bottom: 3px white solid;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    ul.desc {
+        list-style-type: none;
+        text-align:right;
+        padding-left: 0;
+        color: white;
+        line-height: 2rem;
+        font-weight: bold;
+    }
+    ul.weather {
+        list-style-type: none;
+        text-align: left;
+        padding-left: 10px;
+        color: white;
+        line-height: 2rem; 
+    }
+}
+
+/*---------- FIVE-DAY FORECAST - HOME ----------*/
+
+section.forecast {
+    padding-bottom: 10px;
+}
+
+#weatherforecast {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#weatherforecast div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+    justify-items: center;
+    width: 90%;
+    //margin: 10x auto;
+    background-color: #f38375;
+}
+
+#weatherforecast div span {
+    display: block;;
+    width: 100%;
+    background: -moz-linear-gradient(top,  #ef6351 10%, #ffe3e0 86%, #ffe3e0 86%);
+    background: -webkit-linear-gradient(top,  #ef6351 10%,#ffe3e0 86%,#ffe3e0 86%);
+    background: linear-gradient(to bottom,  #ef6351 10%,#ffe3e0 86%,#ffe3e0 86%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef6351', endColorstr='#ffe3e0',GradientType=0 );
+    text-align: center;
+    color: black;
+    padding: 5px;
+    font-weight: bold
+}
+
+/*----------- FORM - SC --------------*/
+
+.flexly {
+	display: flex;
+	align-items: center;
+    padding: 20px 2px;
+}
+
+form fieldset, fieldset.deposit {
+    margin: 2rem 0;
+    border: 3px solid #ef6351;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #f38375;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #3a506b;
+    font-size: 1rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appreance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 5px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.cl {
+    display: block;
+    padding: .5rem;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #f7a399;
+    color: black;
+    border-radius: .9rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 10rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+/*---------- THANK YOU ---------- */
+
+#ty h1{
+    font-family: $fontfamily1;
+    font-size: 3.5rem;
+    border-bottom: 2px solid black;
+}
+
+#ty p {
+    font-family: $fontfamily2;
+    font-size: 1.4rem;
+}
+
+#ty {
+    padding: 15px;
+}
+
+/*---------- SOCIAL MEDIA LINKS - HOME ----------*/
+
+#social {
+    display: flex;
+    padding: 45px 100px;
+    align-items: center;
+}
+
+.social1, .social2, .social3 {
+    margin: 15px;
+}
+
+/*----------  ----------*/
+
+

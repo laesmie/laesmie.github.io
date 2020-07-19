@@ -1,0 +1,59 @@
+@media only screen and (min-width: 1028px) {
+    
+    
+    /*---------- HEADER ----------*/
+
+
+
+    /*---------- NAVIGATION ----------*/
+
+
+
+    /*---------- BODY ----------*/
+
+    .cta, .cozumel, .forecast, .contactInfo {
+        max-width: 80%;
+    }
+
+    /*---------- MAIN ----------*/
+
+
+
+    /*---------- FOOTER ----------*/
+
+    #weatherforecast {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 80%;
+    }
+    
+    #weatherforecast div {
+        min-width: 90%;
+        max-width: 75%;
+    }
+
+    /*----------  ----------*/
+
+    .ws {
+        max-width: 45%;
+    }
+
+    /*----------  ----------*/
+
+
+
+    /*----------  ----------*/
+
+
+
+    /*----------  ----------*/
+
+
+
+    /*----------  ----------*/
+
+
+
+    /*----------  ----------*/
+
+
+}

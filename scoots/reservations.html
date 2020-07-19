@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <title>scootsrental</title>
+
+        <meta name="description" content="scootsrental - We'll help you scoot along!">
+        <meta name="author" content="Kyla Azlin">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400&family=Montserrat&display=swap" rel="stylesheet">
+
+        <link href="css/styles.css" rel="stylesheet">
+
+        <link href="favicon.ico" rel="shortcut icon">
+
+    </head>
+
+    <body>
+
+        <div id="headWrapper">
+            <header class="clearfix">
+                <img src="images/logo.jpg" alt="logo">
+                <div class="header">
+                    <h1>scootsrental.com</h1>
+                    <h2>We'll help you scoot along!</h2>
+                </div>
+            </header>
+        </div>
+        
+        <div id="navWrapper">
+            <nav class="clearfix">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="/scoots/index.html">Home</a></li>
+                    <li><a href="/scoots/rentals.html">Rentals</a></li>
+                    <li class="active"><a href="/scoots/reservations.html">Reservations</a></li>
+                    <li><a href="/scoots/tours.html">Tours</a></li>    
+                    <li><a href="/scoots/contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    <main>
+
+        <h1>Storm Center Form</h1>
+
+        <form method="get" action="deposit.html">
+            
+            <fieldset>
+                
+                <legend>Renter's Information</legend>
+                    <label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-z ]{5,}" required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
+                    <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Home State/Country* <input type="text" name="country" required></label>
+                
+            </fieldset>
+
+            <fieldset>
+                
+                <legend>Rental Information</legend>
+                
+                <div>Date</div>
+                
+                <label class="cl">Start <input type="date" name="date" value="2020-01-01"></label>
+                <label class="cl">End <input type="date" name="date" value="2020-01-01"></label>
+                <label class="top">Rental Type
+                    <select name="type">
+                        <option value="">Please Select</option>
+                        <option value="">Honda Motor Scooters</option>
+                        <option value="1">---Honda Metropolitan (49cc) - 1 Person</option>
+                        <option value="2">---Honda Dio (110cc) - 2 people</option>
+                        <option value="3">---Honda PCX150(149cc) - 3 people</option>
+                        <option value="">ATV Side-by-Side</option>
+                        <option value="4">---Honda Pioneer 1000</option>
+                        <option value="">Jeep Rentals</option>
+                        <option value="5">---4-door Jeep Wrangler - manual with A/C - 5 people MAX</option>
+                        <option value="6">---2-door Jeep Wrangler - open air - manual - 4 people MAX</option>
+                    </select>
+                </label>
+                
+                <label class="top">Nubmer of Rentals
+                    <select name="type">
+                        <option value="">Please Select</option>
+                        <option value="1rental">1</option>
+                        <option value="2rental">2</option>
+                        <option value="3rental">3</option>
+                        <option value="4rental">4</option>
+                        <option value="5+rental">5+</option>
+                    </select>
+                </label>
+
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+
+                <div>Cruise Line</div>
+                
+                    <label class="cl"><input type="radio" name="cruiseline" value="cl1"> Carnival</label>
+                    <label class="cl"><input type="radio" name="cruiseline" value="cl2"> Holland America</label>
+                    <label class="cl"><input type="radio" name="cruiseline" value="cl3"> Norwegian</label>
+                    <label class="cl"><input type="radio" name="cruiseline" value="cl4"> Princess</label>
+                    <label class="cl"><input type="radio" name="cruiseline" value="cl5"> Royal Caribbean</label>
+                    <label class="cl"><input type="radio" name="cruiseline" value="clo"> Other</label>
+                    <label class="cl"><input type="radio" name="cruiseline" value="clo"> N/A</label>
+                
+            </fieldset>
+
+            <fieldset>
+                
+                <legend>Additional Information</legend>
+                
+                    <label class="top">Special Accomodations:</label>
+                        <textarea id="top" rows="5" cols="38"></textarea>
+                    <label class="top">Comments</label>
+                        <textarea id="top" rows="5" cols="38"></textarea>
+                
+            </fieldset>
+
+            <input type="submit" value="Continue" class="submitBtn">
+
+        </form>
+        
+    </main>
+        
+        <div id="footWrapper">
+            <footer class="clearfix">
+                &copy; 2020 &bull; Kyla Azlin &bull; <span id="currentDate"></span>
+            </footer>
+        </div>
+
+        <script src="js/scripts.js"></script>
+        <script src="js/webfonts.js"></script>
+        
+     </body>
+        
+</html>
