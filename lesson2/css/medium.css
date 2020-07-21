@@ -1,0 +1,9 @@
+@media only screen and (min-width: 560px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .white-space {
+        grid-column: span 2;
+    }
+}

@@ -773,7 +773,29 @@ form label.top input:required:valid {
   margin: 15px;
 }
 
-/*----------  ----------*/
+/*---------- TOURS ----------*/
+.container {
+  display: grid;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+.container img {
+  width: 250px;
+  height: 250px;
+}
+
+figure:hover {
+  box-shadow: 5px 10px 18px #ffe3e0;
+}
+
+figcaption {
+  padding: 10px;
+  border: 1px solid #f38375;
+  font-size: 1.7rem;
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+}
+
 @media only screen and (min-width: 870px) {
   /* 35em is also 870px (if basefont is 16px) */
 }

@@ -1,0 +1,477 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*---------- apply a natural box layout model to all elements ----------*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*---------- HEADER ALL ----------*/
+
+header {
+    padding: .5rem 2%;
+    background: -moz-linear-gradient(top,  #3a506b 0%, #5bc0be 100%);
+    background: -webkit-linear-gradient(top,  #3a506b 0%,#5bc0be 100%);
+    background: linear-gradient(to bottom,  #3a506b 0%,#5bc0be 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a506b', endColorstr='#5bc0be',GradientType=0 );
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+}
+
+header img {
+    float: left;
+    margin-right: 10px;
+    width: 100px;
+    padding: 2px;
+}
+
+#headWrapper header h1 {
+    text-align: left;
+    margin: 3px 0;
+    font-size: 3rem;
+    font-family: 'Rock Salt', cursive;
+}
+
+#headWrapper header h2 {
+    text-align: left;
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.5rem;
+    font-family: 'Gayathri';
+}
+
+div#headWrapper {
+    background: -moz-linear-gradient(top,  #3a506b 0%, #5bc0be 100%);
+    background: -webkit-linear-gradient(top,  #3a506b 0%,#5bc0be 100%);
+    background: linear-gradient(to bottom,  #3a506b 0%,#5bc0be 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a506b', endColorstr='#5bc0be',GradientType=0 );
+}
+
+/*---------- NAVIGATION ALL ----------*/
+
+div#navWrapper {
+    background-color: #3a506b;
+}
+
+nav button {
+    margin: .2rem 2%;
+    padding: .5rem;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 1rem 0;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav ul li.active a {
+    background-color: #5bc0be;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #6FFFE9;
+    color: black;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*---------- BODY ALL ----------*/
+
+body {
+    font-size: 16px;
+    font-family: 'Gayathri';
+}
+
+/*---------- BANNER - P ----------*/
+
+div#banner {
+    font-family: 'Gayathri';
+    color: #000;
+    font-size: 1.3rem;
+}
+
+div.showme {
+    display: block;
+}
+
+div.hideme{
+    display: none;
+}
+
+/*---------- MAIN ALL ----------*/
+
+main {
+    padding: .8rem 2%;
+    min-height: 10rem;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    font-family: 'Rock Salt', sans-serif;
+}
+
+main h2 {
+    font-size: 1.7rem;
+}
+
+/*---------- FOOTER ALL ----------*/
+
+footer {
+    background: -moz-linear-gradient(top,  #5bc0be 0%, #3a506b 100%);
+    background: -webkit-linear-gradient(top,  #5bc0be 0%,#3a506b 100%);
+    background: linear-gradient(to bottom,  #5bc0be 0%,#3a506b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5bc0be', endColorstr='#3a506b',GradientType=0 );
+    padding: 1rem 2%;
+    font-size: 1.1rem;
+    text-align: center;
+    color: white;
+    font-family: 'Gayathri';
+}
+
+div#footWrapper {
+    background: -moz-linear-gradient(top,  #5bc0be 0%, #3a506b 100%);
+    background: -webkit-linear-gradient(top,  #5bc0be 0%,#3a506b 100%);
+    background: linear-gradient(to bottom,  #5bc0be 0%,#3a506b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5bc0be', endColorstr='#3a506b',GradientType=0 );
+}
+
+/*---------- CONTACT US ALL ----------*/
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    background-color: #5bc0be;
+    opacity: .7;
+    padding: 10px;
+    margin: 10px 0 0 0;
+}
+
+.contactInfo p {
+    margin: 0;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 0;
+}
+
+.map {
+    display: none;
+}
+
+/*---------- CLEARFIX ALL ----------*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*---------- CARDS - INDEX ----------*/
+
+div.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 2px solid #5bc0be;
+    padding: 1px;
+    text-align: center;
+}
+
+div.cards h3 {
+    font-size: 1.8rem;
+    margin: 0;
+    border-top: 2px solid #5bc0be;
+    padding-top: 10px;
+}
+
+div.cards h4 {
+    font-size: 1.4rem;
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+
+.cards img {
+    width: 100%;
+    padding: 5px;
+}
+
+/*---------- HERO - P, SS, FH ----------*/
+
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+}
+
+.herodiv img {
+    width: 100%;
+    max-height: 500px;
+}
+
+/*---------- WEATHER SUMMARY - P, SS, FH ----------*/
+
+.ws {
+    position: absolute;
+    top: 20px;
+	bottom: 20px;
+	left: 20px;
+	background: -moz-linear-gradient(top,  #3a506b 0%, #5bc0be 100%);
+    background: -webkit-linear-gradient(top,  #3a506b 0%,#5bc0be 100%);
+    background: linear-gradient(to bottom,  #3a506b 0%,#5bc0be 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a506b', endColorstr='#5bc0be',GradientType=0 );
+    opacity: .9;
+	border: 2px solid black;
+	padding: .5rem;
+	box-shadow: 0 0 30px #eee;
+    color: black;
+    text-align: center;
+    max-height: 250px;
+    font-size: 1.1rem;
+}
+
+.ws h2 {
+    display: block;
+    color: white;
+    border-bottom: 3px white solid;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+ul.description {
+    list-style-type: none;
+    text-align:right;
+    padding-left: 0;
+    color: white;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+ul.weather {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 10px;
+    color: white;
+    line-height: 2rem; 
+}
+
+/*---------- UPCOMING EVENTS - P, SS, FH ----------*/
+
+.upcoming {
+    background: radial-gradient(#5bc0be 30%, #3a506b);
+	border: 5px solid black;
+	padding: 1rem;
+	box-shadow: 0 0 30px #111;
+    opacity: .9;   
+    width: 100%;
+    max-width: 400px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.upcoming h2 {
+    border-bottom: 2px solid black;
+}
+
+.upcoming ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*---------- FIVE-DAY FORECAST - P, SS, FH ----------*/
+
+section.forecast {
+    padding-bottom: 10px;
+}
+
+#weatherforecast {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#weatherforecast div {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 90%;
+    margin: 10x auto;
+    background-color: #5bc0be;
+    border: 1px solid #3a506b;
+}
+
+#weatherforecast div span {
+    display: block;;
+    width: 100%;
+    background-color: #5bc0be;
+    text-align: center;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#weatherforecast div p {
+    margin-top: 0;
+}
+
+/*---------- ARTICLE - P, SS, FH ----------*/
+
+.article {
+    padding: 10px;
+    border: 1px solid #586F7C;
+    margin-bottom: 1.5rem;
+    background: -moz-linear-gradient(top,  #3a506b 0%, #5bc0be 100%);
+    background: -webkit-linear-gradient(top,  #3a506b 0%,#5bc0be 100%);
+    background: linear-gradient(to bottom,  #3a506b 0%,#5bc0be 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a506b', endColorstr='#5bc0be',GradientType=0 );
+    opacity: .7;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-size: 1.2rem;
+}
+
+/*---------- IMAGES ALL ----------*/
+
+img {
+    filter: blur(0.02em);
+    transition: filter 0.5s;
+}
+
+
+/*----------- GALLERY --------------*/
+
+.container {
+    display: grid;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+figure:hover {
+    box-shadow: 5px 10px 18px #586F7C;
+}
+
+figcaption {
+    padding: 10px;
+    border: 1px solid #5bc0be;
+    font-size: 1.2rem;
+    font-family: 'Gayathri';
+}
+
+
+/*----------- FORM - SC --------------*/
+
+.flexly {
+	display: flex;
+	align-items: center;
+    padding: 20px 2px;
+}
+
+#rating {
+    margin: 0 10px 0 0;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 3px solid #5bc0be;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #3a506b;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.2rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #3a506b;
+    font-size: 1rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appreance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 5px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.si {
+    display: block;
+    padding: .5rem;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #5bc0be;
+    color: black;
+    border-radius: .9rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+
+/*---------- THANK YOU ---------- */
+
+#ty h1{
+    font-family: 'Gayathri';
+    font-size: 3.5rem;
+}
+
+#ty p {
+    font-family: 'Gayathri';
+    font-size: 1.4rem;
+}

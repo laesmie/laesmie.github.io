@@ -1,0 +1,65 @@
+header, nav, main, footer {
+    margin: 0 auto;
+    padding: 2%;
+    max-width: 1140px;
+}
+
+header, footer {
+    text-align: center;
+    color: #333;
+    border-style: solid;
+    border-color: #333;
+}
+
+h1, h2 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h3 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: #333;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'Gayathri', sans-serif;
+    font-size: 16px;
+}
+
+img {
+    max-width: 200px;
+    max-height: auto;
+    padding: 10px;
+}
+
+section {
+    padding: 10px;
+    background-color: #00be9f;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    align-content: center;
+    margin: 10px;
+    border-style: solid;
+    border-color: #333;
+}
+
+footer a:link {
+    color: white;
+}
+
+footer a:visited {
+    color: #333;
+}
+
+footer {
+    font-family: 'Gayathri', sans-serif;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressive Loading of Images Activity</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/lazyload.css" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <h1>Lazy-Load Images</h1>
+        <div class="imageGrid">
+            <picture>
+                <img src='images/placeholder.jpg' data-src='images/crochet-1.jpg' alt='Porgs'>
+            </picture>
+            <picture>
+                <img src='images/placeholder.jpg' data-src='images/crochet-2.jpg' alt='AT-AT Walker'>
+            </picture>
+            <picture>
+                <img src='images/placeholder.jpg' data-src='images/crochet-3.jpg' alt='Baby Yoda'>
+            </picture>
+            <picture>
+                <img src='images/placeholder.jpg' data-src='images/crochet-4.jpg' alt='Baby Cthuhlu'>
+            </picture>
+            <picture>
+                <img src='images/placeholder.jpg' data-src='images/crochet-5.jpg' alt='Elephant'>
+            </picture>
+            <picture>
+                <img src='images/placeholder.jpg' data-src='images/crochet-6.jpg' alt='Converse'>
+            </picture>
+        </div>
+    </section>
+    <script src="js/lazyload.js"></script>
+</body>
+
+</html>
