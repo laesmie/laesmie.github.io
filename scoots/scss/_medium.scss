@@ -7,7 +7,7 @@
     
 
     /*---------- NAVIGATION ----------*/
-
+    
     nav button {
         display: none;
     }
@@ -32,17 +32,21 @@
 
     /*---------- BODY ----------*/
 
-    .cta, .cozumel, .forecast, .contactInfo {
-        max-width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+    .todo, .cta, .cozumel, .forecast, .contactInfo, #ty {
+        //max-width: 85%;
     }
 
     /*---------- MAIN ----------*/
+    
+    div.container figure img {
+        max-width: 300px;
+        max-height: 300px;
+        margin: 0;
+    }
 
     .contact {
         display: grid;
-        grid-template-columns: 1fr 1fr 2fr 4fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     #map1, #map2 {
@@ -76,13 +80,23 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    /*----------  ----------*/
+    /*---------- TOURS ----------*/
 
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
 
+    .container img {
+        width: 345px;
+        height: 345px;
+    }
 
-    /*----------  ----------*/
+    /*---------- PRICES ----------*/
 
-
+    .services .chart li {
+        width: 5.5rem;
+    }
 
     /*----------  ----------*/
 

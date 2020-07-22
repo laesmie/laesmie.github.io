@@ -11,13 +11,16 @@
 
     /*---------- BODY ----------*/
 
-    .cta, .cozumel, .forecast, .contactInfo {
+    .todo, .cta, .cozumel, .forecast, .contactInfo, #ty {
         max-width: 80%;
     }
 
     /*---------- MAIN ----------*/
 
-
+    div.container figure img {
+        max-width: 200px;
+        max-height: 200px;
+    }
 
     /*---------- FOOTER ----------*/
 
@@ -37,11 +40,18 @@
         max-width: 45%;
     }
 
-    /*----------  ----------*/
+    /*---------- TOURS ----------*/
 
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 100%;
+    }
 
+    /*---------- PRICES ----------*/
 
-    /*----------  ----------*/
+    .services .chart li {
+        width: 7.3rem;
+    }
 
 
 

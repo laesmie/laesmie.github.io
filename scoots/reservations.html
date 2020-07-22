@@ -45,81 +45,89 @@
         </div>
         
     <main>
+        <section class="formInfo">
 
-        <h1>Storm Center Form</h1>
+            <h2>Reservations</h2>
 
-        <form method="get" action="deposit.html">
-            
-            <fieldset>
-                
-                <legend>Renter's Information</legend>
-                    <label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-z ]{5,}" required></label>
-                    <label class="top">Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
-                    <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-                    <label class="top">Home State/Country* <input type="text" name="country" required></label>
-                
-            </fieldset>
+            <form method="get" action="deposit.html">
 
-            <fieldset>
-                
-                <legend>Rental Information</legend>
-                
-                <div>Date</div>
-                
-                <label class="cl">Start <input type="date" name="date" value="2020-01-01" required></label>
-                <label class="cl">End <input type="date" name="date" value="2020-01-01" required></label>
-                <label class="top">Rental Type
-                    <select name="type">
-                        <option value="">Please Select</option>
-                        <option value="">Honda Motor Scooters</option>
-                        <option value="1">---Honda Metropolitan (49cc) - 1 Person</option>
-                        <option value="2">---Honda Dio (110cc) - 2 people</option>
-                        <option value="3">---Honda PCX150(149cc) - 3 people</option>
-                        <option value="">ATV Side-by-Side</option>
-                        <option value="4">---Honda Pioneer 1000</option>
-                        <option value="">Jeep Rentals</option>
-                        <option value="5">---4-door Jeep Wrangler - manual with A/C - 5 people MAX</option>
-                        <option value="6">---2-door Jeep Wrangler - open air - manual - 4 people MAX</option>
-                    </select>
-                </label>
-                
-                <label class="top">Nubmer of Rentals
-                    <select name="type">
-                        <option value="">Please Select</option>
-                        <option value="1rental">1</option>
-                        <option value="2rental">2</option>
-                        <option value="3rental">3</option>
-                        <option value="4rental">4</option>
-                        <option value="5+rental">5+</option>
-                    </select>
-                </label>
+                <fieldset>
 
-                <div>Cruise Line</div>
-                
-                    <label class="cl"><input type="radio" name="cruiseline" value="cl1"> Carnival</label>
-                    <label class="cl"><input type="radio" name="cruiseline" value="cl2"> Holland America</label>
-                    <label class="cl"><input type="radio" name="cruiseline" value="cl3"> Norwegian</label>
-                    <label class="cl"><input type="radio" name="cruiseline" value="cl4"> Princess</label>
-                    <label class="cl"><input type="radio" name="cruiseline" value="cl5"> Royal Caribbean</label>
-                    <label class="cl"><input type="radio" name="cruiseline" value="clo"> Other</label>
-                    <label class="cl"><input type="radio" name="cruiseline" value="clo"> N/A</label>
-                
-            </fieldset>
+                    <legend>Renter's Information</legend>
+                        <label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-z ]{5,}" required></label>
+                        <label class="top">Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
+                        <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                        <label class="top">Home State/Country* <input type="text" name="country" required></label>
 
-            <fieldset>
-                
-                <legend>Additional Information</legend>
-                
-                    <label class="top">Special Accomodations:</label>
-                        <textarea id="top" rows="5" cols="38"></textarea>
-                    <label class="top">Comments</label>
-                        <textarea id="top" rows="5" cols="38"></textarea>
-                
-            </fieldset>
+                </fieldset>
 
-            <input type="submit" value="Continue" class="submitBtn">
+                <fieldset>
 
-        </form>
+                    <legend>Rental Information</legend>
+
+                    <div>Date</div>
+
+                    <label class="cl">Start <input type="date" name="date" value="2020-01-01" required></label>
+                    <label class="cl">End <input type="date" name="date" value="2020-01-01" required></label>
+                    <label class="top">Rental Type
+                        <select name="type">
+                            <option value="">Please Select</option>
+                            <option value="">Honda Motor Scooters</option>
+                            <option value="1">---Honda Metropolitan (49cc) - 1 Person</option>
+                            <option value="2">---Honda Dio (110cc) - 2 people</option>
+                            <option value="3">---Honda PCX150(149cc) - 3 people</option>
+                            <option value="">ATV Side-by-Side</option>
+                            <option value="4">---Honda Pioneer 1000</option>
+                            <option value="">Jeep Rentals</option>
+                            <option value="5">---4-door Jeep Wrangler - manual with A/C - 5 people MAX</option>
+                            <option value="6">---2-door Jeep Wrangler - open air - manual - 4 people MAX</option>
+                        </select>
+                    </label>
+
+                    <label class="top">Nubmer of Rentals
+                        <select name="type">
+                            <option value="">Please Select</option>
+                            <option value="1rental">1</option>
+                            <option value="2rental">2</option>
+                            <option value="3rental">3</option>
+                            <option value="4rental">4</option>
+                            <option value="5+rental">5+</option>
+                        </select>
+                    </label>
+
+                    <div>Cruise Line</div>
+
+                        <label class="cl"><input type="radio" name="cruiseline" value="cl1"> Carnival</label>
+                        <label class="cl"><input type="radio" name="cruiseline" value="cl2"> Holland America</label>
+                        <label class="cl"><input type="radio" name="cruiseline" value="cl3"> Norwegian</label>
+                        <label class="cl"><input type="radio" name="cruiseline" value="cl4"> Princess</label>
+                        <label class="cl"><input type="radio" name="cruiseline" value="cl5"> Royal Caribbean</label>
+                        <label class="cl"><input type="radio" name="cruiseline" value="clo"> Other</label>
+                        <label class="cl"><input type="radio" name="cruiseline" value="clo"> N/A</label>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Additional Information</legend>
+
+                        <label class="top">Special Accomodations:</label>
+                            <textarea id="top" rows="5" cols="38"></textarea>
+                        <label class="top">Comments</label>
+                            <textarea id="top" rows="5" cols="38"></textarea>
+
+                </fieldset>
+                
+                <fieldset>
+                
+                    <label class="rentalAgree"><input type="checkbox" name="cruiseline" value="clo" required> Agree to terms and conditions in the <a href="agreement.html" target="_blank">rental agreement </a></label>
+                
+                </fieldset>
+
+                <input type="submit" value="Continue" class="submitBtn">
+
+            </form>
+        </section>
         
     </main>
         

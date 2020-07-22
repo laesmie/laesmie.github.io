@@ -531,16 +531,16 @@ body {
 }
 
 /*---------- MAIN ----------*/
-.cta, .cozumel, .forecast, .contactInfo, #ty {
+.todo, .cta, .cozumel, .prices, .forecast, .contactInfo, #ty, .formInfo h2 {
   border: 3px solid #ef6351;
   border-radius: 5px;
-  padding: 0;
+  padding: 1rem 2%;
   margin: 10px;
-}
-
-main section.cozumel, main section.contactInfo, main section.forecast {
   padding: .8rem 2%;
   text-align: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main h2, #ty {
@@ -688,7 +688,7 @@ section.forecast {
 }
 
 form fieldset, fieldset.deposit {
-  margin: 2rem 0;
+  margin: 2rem;
   border: 3px solid #ef6351;
   border-radius: 10px;
   padding: .5rem 2%;
@@ -755,7 +755,7 @@ form label.top input:required:valid {
 
 #ty p {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.4rem;
+  font-size: .9rem;
 }
 
 #ty {
@@ -779,21 +779,51 @@ form label.top input:required:valid {
   margin-bottom: 1rem;
   justify-content: center;
 }
-.container img {
-  width: 250px;
-  height: 250px;
+
+figure img {
+  width: 400px;
+  height: 400px;
+  padding: 5px;
+  margin: 35px;
 }
 
 figure:hover {
-  box-shadow: 5px 10px 18px #ffe3e0;
+  box-shadow: 5px 10px 15px #ffe3e0;
 }
 
 figcaption {
+  margin: 0 10px;
   padding: 10px;
   border: 1px solid #f38375;
   font-size: 1.7rem;
   font-family: "Amatic SC", cursive;
   text-align: center;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*---------- PRICES ----------*/
+section.prices {
+  padding: 10px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.services ul {
+  list-style-type: none;
+  padding-left: 15px;
+}
+.services .chart li {
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px solid #f38375;
+  height: 75px;
+  margin: 5px;
+  padding: 20px 0;
+  text-align: center;
+  width: 4rem;
 }
 
 @media only screen and (min-width: 870px) {
@@ -825,16 +855,16 @@ figcaption {
   }
 
   /*---------- BODY ----------*/
-  .cta, .cozumel, .forecast, .contactInfo {
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  /*---------- MAIN ----------*/
+  div.container figure img {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0;
   }
 
-  /*---------- MAIN ----------*/
   .contact {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 4fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   #map1, #map2 {
@@ -862,8 +892,22 @@ figcaption {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  /*----------  ----------*/
-  /*----------  ----------*/
+  /*---------- TOURS ----------*/
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+
+  .container img {
+    width: 345px;
+    height: 345px;
+  }
+
+  /*---------- PRICES ----------*/
+  .services .chart li {
+    width: 5.5rem;
+  }
+
   /*----------  ----------*/
   /*----------  ----------*/
 }
@@ -872,11 +916,16 @@ figcaption {
   /*---------- HEADER ----------*/
   /*---------- NAVIGATION ----------*/
   /*---------- BODY ----------*/
-  .cta, .cozumel, .forecast, .contactInfo {
+  .todo, .cta, .cozumel, .forecast, .contactInfo, #ty {
     max-width: 80%;
   }
 
   /*---------- MAIN ----------*/
+  div.container figure img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
   /*---------- FOOTER ----------*/
   #weatherforecast {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -893,8 +942,17 @@ figcaption {
     max-width: 45%;
   }
 
-  /*----------  ----------*/
-  /*----------  ----------*/
+  /*---------- TOURS ----------*/
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+  }
+
+  /*---------- PRICES ----------*/
+  .services .chart li {
+    width: 7.3rem;
+  }
+
   /*----------  ----------*/
   /*----------  ----------*/
   /*----------  ----------*/
